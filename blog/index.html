@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curto-Circuito em Guarujá: Como Evitar e Chamar o Eletricista 24 Horas</title>
+    <meta name="description" content="Guia completo sobre como evitar curto-circuito em casas no Guarujá afetadas pela maresia e quando é crucial chamar um eletricista 24 horas de emergência.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilos de Tipografia e Base */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+            color: #333;
+            background: #f7f7f7;
+        }
+
+        /* =====================
+           NAVIGAÇÃO
+           ===================== */
+        .top-bar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #004aad;
+            position: relative;
+        }
+        .top-bar h1 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+        .menu-toggle {
+            font-size: 1.5rem;
+            color: #fff;
+            cursor: pointer;
+            z-index: 110;
+        }
+        
+        .main-nav {
+            width: 100%;
+            background: #003580;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 12px;
+            flex-wrap: wrap;
+            z-index: 100;
+            position: sticky;
+            top: 0;
+        }
+        .main-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .main-nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* =====================
+           ESTILO PRINCIPAL DO BLOG
+           ===================== */
+        .blog-header-container {
+            background: #004aad;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .blog-intro {
+            background: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+        }
+        .blog-intro h2 {
+            color: #ff6600;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: none;
+        }
+        .blog-intro p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* =====================
+           ACORDEÃO DA POSTAGEM
+           ===================== */
+        .post-acordeon {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        
+        .post-title-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f8ff; /* Fundo suave */
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .post-title-header:hover {
+            background-color: #eaf3ff;
+        }
+
+        .post-title {
+            font-size: 1.8rem;
+            color: #003580;
+            margin: 0;
+            line-height: 1.2;
+        }
+        
+        .toggle-icon {
+            font-size: 1.5rem;
+            color: #004aad;
+            transition: transform 0.3s;
+        }
+
+        .post-acordeon.active .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .post-content {
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+            max-height: 0; /* Começa minimizado */
+            padding: 0 20px; /* Padding vertical zero quando fechado */
+        }
+
+        .post-acordeon.active .post-content {
+            max-height: 5000px; /* Valor grande para permitir a expansão total */
+            padding: 20px;
+        }
+
+        h2 {
+            color: #004aad;
+            border-bottom: 2px solid #ff6600;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: #ff6600;
+            margin-top: 25px;
+            font-size: 1.4rem;
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        
+        /* CTA de Contato */
+        .contact-cta {
+            background: #fff3e0;
+            border: 1px solid #ff6600;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .cta-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff6600;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .cta-btn:hover {
+            background: #e65c00;
+        }
+        
+        /* Rodapé Simples */
+        footer {
+            background: #222;
+            color: #ddd;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        /* =====================
+           MEDIA QUERIES (RESPONSIVIDADE)
+           ===================== */
+        @media (max-width: 768px) {
+            .top-bar {
+                padding: 15px 20px;
+                z-index: 101; 
+            }
+            .top-bar h1 {
+                display: block; 
+                font-size: 1.1rem;
+            }
+            .menu-toggle {
+                margin-left: auto;
+            }
+            .main-nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 50px;
+                right: 0;
+                width: 70%;
+                background: #003580; 
+                z-index: 90;
+                padding: 0;
+                box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+            }
+            .main-nav.active {
+                display: flex;
+            }
+            .main-nav a {
+                padding: 12px 5px;
+                display: block;
+                text-align: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .container {
+                width: 95%;
+                margin: 20px auto;
+                padding: 15px;
+            }
+
+            .post-title {
+                font-size: 1.4rem; /* Reduzido para caber melhor no mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="blog-header-container">
+        <div class="top-bar">
+            <h1>Eletricista 24h Guarujá</h1> 
+            <i class="fas fa-bars menu-toggle" id="menu-toggle"></i>
+        </div>
+    </header>
+    
+    <nav class="main-nav" id="main-nav">
+        <a href="index.html#eletricista">Eletricista</a>
+        <a href="index.html#outros-servicos">Outros Serviços</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#depoimentos">Depoimentos</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="index.html#contato">Contato</a>
+    </nav>
+
+    <!-- INTRODUÇÃO DO BLOG -->
+    <div class="blog-intro">
+        <h2>Dicas de Segurança e Manutenção Elétrica para o Litoral</h2>
+        <p>Aqui no nosso blog, você encontra guias práticos, dicas de segurança e informações cruciais para proteger sua casa ou comércio dos problemas elétricos mais comuns no Guarujá, como maresia e sobrecarga. Fique por dentro para evitar emergências!</p>
+    </div>
+
+    <!-- CONTEÚDO MINIMIZADO EM UMA DIV ACORDEÃO -->
+    <div class="container">
+        
+        <div class="post-acordeon" id="post-acordeon">
+
+            <div class="post-title-header">
+                <h1 class="post-title">Curto-Circuito em Guarujá: Como Evitar e Quando Chamar o Eletricista 24 Horas</h1>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            
+            <div class="post-content">
+                <p>Viver no <strong>Guarujá</strong> é sinônimo de praia e descanso, mas as instalações elétricas em cidades litorâneas exigem atenção redobrada devido à maresia. Um curto-circuito não é apenas um incômodo; é um risco sério de incêndio. Saber identificar os sinais e agir rapidamente é fundamental.</p>
+
+                <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+                <h2>O Que Causa Curto-Circuito em Casas no Litoral?</h2>
+
+                <p>Um <strong>curto-circuito</strong> ocorre quando a corrente elétrica encontra um caminho mais curto e rápido do que o normal, geralmente ligando o fio fase diretamente ao neutro ou ao terra. No Guarujá, isso é acelerado por:</p>
+
+                <ol>
+                    <li><strong>Maresia e Corrosão:</strong> O sal no ar corrói cabos, conexões e componentes internos de disjuntores. Com o tempo, essa corrosão rompe o isolamento e causa contato direto entre os fios.</li>
+
+                    <li><strong>Sobrecarga:</strong> O uso excessivo de aparelhos de alto consumo (como chuveiros, ar-condicionado e aquecedores) em instalações antigas ou mal dimensionadas. Se a <strong>fiação</strong> não suporta a carga, ela superaquece e o isolamento derrete, causando o curto.</li>
+
+                    <li><strong>Fiação Antiga e Descascada:</strong> Instalações com mais de 20 anos frequentemente têm cabos rígidos e isolamento que se deteriora, aumentando a chance de falha.</li>
+                </ol>
+
+                <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+                <h2>3 Sinais de que Você Precisa de um Eletricista de Emergência</h2>
+
+                <p>Se notar qualquer um destes sinais, não hesite: chame um <strong>eletricista 24 horas em Guarujá</strong> imediatamente.</p>
+
+                <h4>1. Cheiro de Queimado ou Plástico Derretendo</h4>
+                <p>Este é o sinal de alerta máximo. O cheiro significa que a capa plástica (isolamento) de um fio está derretendo devido ao superaquecimento.</p>
+
+                <h4>2. Disjuntor Desarmando Constantemente</h4>
+                <p>O disjuntor existe para proteger sua casa. Se ele desarma logo após ser rearmado, ou se isso acontece repetidamente ao ligar um aparelho específico, é um sinal claro de <strong>sobrecarga</strong> ou de um curto-circuito intermitente.</p>
+
+                <h4>3. Fagulhas ou Faíscas em Tomadas</h4>
+                <p>Fagulhas (pequenas ou grandes) ao plugar ou desplugar um aparelho indicam conexões soltas ou defeito na tomada, um ponto de falha comum que pode evoluir para um curto perigoso.</p>
+
+                <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+                <h2>Dicas de Manutenção Preventiva para Moradores do Guarujá</h2>
+
+                <p>Prevenir é sempre melhor do que remediar, especialmente em emergências noturnas.</p>
+
+                <ul>
+                    <li><strong>Faça uma Revisão Anual:</strong> Se você tem um apartamento ou casa de veraneio no Guarujá, peça a um <strong>eletricista profissional</strong> para inspecionar seu quadro de distribuição e a fiação a cada 1 a 2 anos.</li>
+
+                    <li><strong>Use DRs (Diferencial Residual):</strong> Este tipo de disjuntor protege contra fugas de corrente (choques) e é indispensável em áreas molhadas, como cozinhas e banheiros.</li>
+
+                    <li><strong>Não Use "T" ou Extensões Excessivamente:</strong> Evite ligar vários aparelhos de alto consumo em uma única tomada usando adaptadores. Isso causa sobrecarga e estresse na fiação.</li>
+                </ul>
+
+                <div class="contact-cta">
+                    <p><strong>Sua segurança elétrica é prioridade.</strong> Se estiver enfrentando uma emergência, nosso <strong>Eletricista 24 Horas Guarujá</strong> está pronto para resolver o problema com rapidez e preço justo, garantindo o atendimento a qualquer hora.</p>
+                    <a href="https://wa.me/5513996197248" class="cta-btn" target="_blank"><i class="fab fa-whatsapp"></i> Chamar Eletricista Agora</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html#blog" class="cta-btn" style="background: #004aad;"><i class="fas fa-arrow-left"></i> Voltar para a Página Principal</a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Eletricista 24 Horas Guarujá. Todos os direitos reservados.</p>
+        <p>Site desenvolvido por RSA Digital</p>
+    </footer>
+
+    <!-- Script de funcionalidade do menu hamburguer e acordeão -->
+    <script>
+        // =====================
+        // LÓGICA DO MENU HAMBURGUER
+        // =====================
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+            });
+
+            // Fecha o menu ao clicar em qualquer link (útil no mobile)
+            mainNav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mainNav.classList.contains('active')) {
+                        mainNav.classList.remove('active');
+                    }
+                });
+            });
+        }
+
+        // =====================
+        // LÓGICA DO ACORDEÃO DA POSTAGEM (CLIQUE NO TÍTULO)
+        // =====================
+        const postAcordeon = document.getElementById('post-acordeon');
+        const postTitleHeader = postAcordeon.querySelector('.post-title-header');
+
+        postTitleHeader.addEventListener('click', () => {
+            postAcordeon.classList.toggle('active');
+        });
+        
+        // Ativa o post por padrão na primeira carga para melhor SEO/UX
+        // Se quiser que comece fechado, comente a linha abaixo.
+        postAcordeon.classList.add('active'); 
+
+    </script>
+</body>
+</html>
