@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encanador 24 Horas em Guarujá | Reparos Hidráulicos, Bombas e Piscinas</title>
+<meta name="description" content="Encanador 24 horas em Guarujá. Atendimento emergencial e rápido para reparo de canos furados, troca de torneiras e sifões, instalação de bombas hidráulicas, manutenção de piscinas e troca de resistência de aquecedor boiler. Ligue agora via WhatsApp!">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<style>
+  /* Estilos de Tipografia e Base (Copiados do index.html) */
+  body { 
+    font-family: Arial, sans-serif; 
+    margin:0; 
+    padding:0; 
+    line-height:1.6; 
+    color:#333; 
+    background:#f7f7f7; 
+    /* CORREÇÃO CHAVE: Impede a rolagem horizontal */
+    overflow-x: hidden; 
+  }
+
+  /* =====================
+      HEADER: Seção Hero com Imagem - Tema Azul/Água
+      ===================== */
+  header { 
+    /* ATUALIZADO: Ajustado caminho para ../ pois o arquivo está na subpasta */
+    background-image: linear-gradient(rgba(0, 53, 128, 0.75), rgba(0, 53, 128, 0.75)), url('../encanador.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px; 
+    color:#fff; 
+    text-align:left;
+    padding:0px 20px 30px 20px;
+    position:relative; 
+    display:flex;
+    flex-direction: column; 
+    align-items:flex-end; /* Alinhamento padrão para desktop (conteúdo à direita) */
+  }
+
+  /* Cores específicas de destaque (Laranja Elétrico -> Azul Hidráulico) */
+  .highlight { color: #00bcd4; display: block; } /* Ciano/Água */
+  .slogan { color: #00bcd4; } 
+
+  /* Cores de Botão (WhatsApp Laranja e Secundário Azul) */
+  .btn { display:inline-block; padding:12px 25px; background:#ff6600; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; transition:0.3s; margin-right: 15px; }
+  .btn:hover { background:#e65c00; }
+  .btn.whatsapp-hero { background: #ff6600; padding: 15px 30px; font-size: 1.1rem; margin-right: 15px; }
+  .btn.whatsapp-hero:hover { background: #e65c00; }
+  .btn.secondary-hero { background: #004aad; padding: 15px 30px; font-size: 1.1rem; margin-bottom: 10px; }
+  .btn.secondary-hero:hover { background: #003580; }
+  .feature-card i { color: #00bcd4; } /* Ícones Ciano */
+  h2 { color:#004aad; margin-bottom:20px; border-bottom: 2px solid #00bcd4; padding-bottom: 5px; }
+  .faq-question { border-left: 5px solid #00bcd4; color: #004aad; }
+  .faq-question:hover { background-color: #eaf8ff; }
+
+  /* Estilos de layout copiados do index.html para consistência */
+  .top-bar { width: 100%; display: flex; justify-content: flex-end; align-items: center; padding-top: 20px; }
+  .menu-toggle { font-size: 1.5rem; color: #fff; cursor: pointer; display: none; }
+  .main-nav { width: 100%; background:#003580; display:flex; justify-content:center; gap:20px; padding:12px; flex-wrap:wrap; z-index:100; position: sticky; top: 0; }
+  .main-nav a { color:#fff; text-decoration:none; font-weight:bold; transition: color 0.3s; }
+  .main-nav a:hover { color: #ffcc00; }
+  .hero-content { max-width: 1200px; width: 100%; padding: 0 20px 30px 20px; margin-top: auto; }
+  .hero-text-container { max-width: 600px; margin-bottom: 30px; }
+  header h1 { margin:0; font-size:3rem; line-height: 1.1; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); }
+  .description-text { margin:15px 0 25px; font-size:1.2rem; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); }
+  
+  /* Garante padding lateral consistente no desktop */
+  .container { 
+    width:100%; 
+    max-width:1200px; 
+    margin:auto; 
+    padding:30px 20px; /* 20px de padding horizontal padrão no desktop */
+  }
+
+  section { margin-bottom:50px; }
+  footer { background:#222; color:#ddd; text-align:center; padding:25px 15px; }
+  footer a { color:#ff6600; text-decoration:none; }
+  .hero-features { display: flex; justify-content: flex-start; gap: 20px; margin-top: 40px; width: 100%; max-width: 600px; }
+  .feature-card { flex: 1; display: flex; flex-direction: column; align-items: flex-start; padding: 15px; background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 8px; color: #fff; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); }
+  .feature-card strong { font-size: 0.95rem; font-weight: 600; line-height: 1.2; }
+  .feature-card span { font-size: 0.8rem; font-weight: 400; opacity: 0.8; }
+  .faq-item { margin-bottom: 10px; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .faq-answer { overflow: hidden; transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out; padding: 0 15px; background: #fff; color: #333; max-height: 0; }
+  .faq-item.active .faq-answer { max-height: 500px; padding: 15px; }
+  .faq-question i { transition: transform 0.3s; }
+  .faq-item.active .faq-question i { transform: rotate(180deg); }
+  .faq-item.active .faq-answer { max-height: 500px; padding: 15px; }
+  .service-img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+  .card { background:#fff; border-radius:10px; padding:20px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:0.3s; }
+  .card i { font-size:40px; color:#004aad; margin-bottom:15px; }
+
+  /* Responsividade Mobile (copiado e adaptado) */
+  @media (max-width: 768px) {
+      .top-bar { display: flex; justify-content: flex-end; align-items: center; padding: 0 20px; }
+      .menu-toggle { display: block; margin-left: auto; }
+      .main-nav { display: none; flex-direction: column; position: absolute; top: 60px; right: 0; width: 80%; background: #003580; z-index: 90; padding: 0; box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3); }
+      .main-nav.active { display: flex; box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3); }
+      .main-nav a { padding: 12px 5px; display: block; text-align: center; width: 100%; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+      .hero-features { justify-content: center; max-width: 100%; margin-left: auto; margin-right: auto; flex-direction: column; align-items: center; }
+      .feature-card { width: 90%; max-width: 300px; align-items: center; text-align: center; flex-direction: column; }
+      .feature-card strong, .feature-card span { display: block; }
+      .btn.whatsapp-hero, .btn.secondary-hero { margin: 10px 5px; }
+      header h1 { font-size: 2.5rem; }
+      
+      /* CORREÇÃO FINAL REFORÇADA NO MOBILE */
+      
+      header {
+          /* Remove o padding lateral do header no mobile, pois o hero-content cuidará disso */
+          padding: 0 0 30px 0; 
+          /* CORREÇÃO APLICADA AQUI: Garante que o conteúdo comece na esquerda no mobile */
+          align-items: flex-start; 
+      }
+      
+      .container {
+        width: 100%; 
+        padding: 20px; /* 20px de padding em todos os lados para o conteúdo principal */
+        box-sizing: border-box;
+      }
+      .hero-content {
+        /* CORREÇÃO CHAVE: Garante que o padding de 20px seja aplicado na esquerda e na direita */
+        padding: 0 20px 30px 20px; 
+        /* Garante que o conteúdo ocupe 100% da largura, permitindo o padding interno */
+        width: 100%; 
+        box-sizing: border-box;
+      }
+      
+      section h2 { 
+        padding-left: 0; /* Volta ao padrão */
+        margin-left: 0;
+      }
+      
+      .reviews-grid {
+        padding: 0 20px; /* Garante que o grid não encoste */
+      }
+  }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <i class="fas fa-bars menu-toggle" id="menu-toggle"></i>
+    </div>
+    
+    <nav class="main-nav" id="main-nav">
+      <a href="../">Eletricista</a> <!-- AJUSTADO: Volta para a raiz -->
+      <a href="#encanador">Encanador</a>
+      <a href="../instalacao-ar-condicionado-guaruja/">Ar Condicionado</a> <!-- AJUSTADO -->
+      <a href="../#faq">FAQ</a> <!-- AJUSTADO -->
+      <a href="../#depoimentos">Depoimentos</a> <!-- AJUSTADO -->
+      <a href="../blog/">Blog</a> <!-- AJUSTADO -->
+      <a href="../#contato">Contato</a> <!-- AJUSTADO -->
+    </nav>
+    
+  <div class="hero-content">
+
+    <div class="hero-text-container">
+      <h1>Encanador 24 Horas em <span class="highlight">Guarujá</span></h1>
+      <p class="slogan">Reparo rápido para vazamentos e hidráulica! 💧</p>
+      <p class="description-text">Serviço especializado em <strong>reparo de canos furados</strong>, troca de componentes, instalação de bombas, <strong>manutenção de piscinas</strong> e <strong>troca de resistência de aquecedor boiler</strong>. Atendimento 24h em toda a região.</p>
+    </div>
+    
+    <div>
+        <a href="https://wa.me/5513996197248" class="btn whatsapp-hero" target="_blank"><i class="fab fa-whatsapp"></i> Chamar Encanador no WhatsApp</a>
+        <a href="#servicos" class="btn secondary-hero">Ver Serviços</a>
+    </div>
+
+    <!-- FEATURE CARDS -->
+    <div class="hero-features">
+        <div class="feature-card">
+            <i class="fas fa-pump-medical"></i>
+            <strong>Bombas e Piscinas</strong>
+            <span>Instalação e Manutenção</span>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-wrench"></i>
+            <strong>Reparo Imediato</strong>
+            <span>Canos furados e vazamentos visíveis</span>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-tools"></i>
+            <strong>Componentes Novos</strong>
+            <span>Troca de torneiras e sifões</span>
+        </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- Seção Encanador (Conteúdo Principal) -->
+  <section id="encanador">
+    <h2>Serviço de Reparo e Manutenção Hidráulica 24 Horas em Guarujá</h2>
+    <!-- AJUSTADO: Caminho da imagem para ../ pois o arquivo está na subpasta -->
+    <img src="../encanador.jpg" alt="Imagem de encanador profissional consertando um cano." class="service-img" onerror="this.onerror=null;this.src='https://placehold.co/600x200/004aad/ffffff?text=Encanador%20Guarujá'">
+    <p>Nossa equipe está pronta para atender qualquer emergência hidráulica em sua residência, comércio ou indústria no Guarujá. <strong>Somos especialistas em reparos rápidos</strong>, garantindo a segurança de sua instalação e prevenindo grandes prejuízos.</p>
+    
+    <p><strong>Nossos principais serviços incluem:</strong></p>
+    <ul>
+      <li><strong>Troca de Torneiras e Sifões:</strong> Reparo e substituição de componentes em cozinhas e banheiros.</li>
+      <li><strong>Reparo em Cano Furado:</strong> Solução rápida para vazamentos visíveis em canos de PVC, Cobre e Ferro.</li>
+      <li><strong>Instalação e Manutenção de Bombas:</strong> Serviços completos para bombas hidráulicas residenciais e industriais.</li>
+      <li><strong>Manutenção de Piscinas:</strong> Reparos hidráulicos em sistemas de filtragem e bombas de piscina.</li>
+      <li><strong>Troca de Resistência de Aquecedor Boiler:</strong> Manutenção em sistemas de aquecimento central, garantindo água quente imediata.</li>
+      <li>Instalações de válvulas e registros em geral.</li>
+    </ul>
+    
+    <p><em><strong>Atenção:</strong> Não realizamos serviços de Caça-Vazamento (detecção por ultrassom) ou Desentupimento. Focamos exclusivamente em <strong>reparo imediato e manutenção de instalações hidráulicas.</strong></em></p>
+    <a href="https://wa.me/5513996197248" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Chamar Encanador 24h Agora</a>
+  </section>
+
+  <!-- Seção Serviços Detalhados -->
+  <section id="servicos">
+    <h2>Serviços Hidráulicos Especializados</h2>
+    <div class="services">
+      
+      <div class="card">
+        <i class="fas fa-fire-alt"></i>
+        <h3>Aquecedores e Boilers</h3>
+        <p>Serviço especializado em <strong>troca de resistência de aquecedor boiler</strong>, garantindo o funcionamento do seu sistema de água quente centralizada.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-screwdriver"></i>
+        <h3>Reparo de Canos Furados</h3>
+        <p>Solução emergencial para <strong>vazamentos</strong> e rompimentos de tubulação em paredes ou áreas externas, com agilidade para evitar inundações e danos.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-swimming-pool"></i>
+        <h3>Manutenção de Piscinas</h3>
+        <p>Instalação e manutenção de <strong>bombas e filtros de piscinas</strong>, garantindo o funcionamento perfeito do sistema hidráulico.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-faucet-drip"></i>
+        <h3>Troca de Componentes</h3>
+        <p><strong>Troca de sifões, torneiras, reparos em válvulas</strong> de descarga e registros. Deixamos tudo novo, sem gotejamentos.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ -->
+  <section id="faq-encanador">
+    <h2>Perguntas Frequentes (FAQ) de Encanamento</h2>
+    <div class="faq-container">
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Vocês atendem emergências para cano furado ou estourado?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Sim! Nosso foco é o <strong>reparo imediato</strong>. Se você tem um cano visivelmente furado ou estourado, nosso encanador 24h é acionado imediatamente para estancar o vazamento e realizar o reparo ou a substituição da tubulação danificada.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Qual o valor para troca de resistência de aquecedor boiler no Guarujá?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>O custo para <strong>troca de resistência de aquecedor boiler</strong> depende do modelo do equipamento (elétrico ou a gás) e da peça. Recomendamos entrar em contato via WhatsApp para uma avaliação e <strong>orçamento rápido</strong>.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Quais tipos de bombas hidráulicas vocês instalam e fazem manutenção?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Trabalhamos com a instalação, manutenção e troca de <strong>bombas hidráulicas</strong> para caixas d'água, sistemas de pressurização e bombas de piscina.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Quanto tempo o Encanador 24h leva para chegar em caso de emergência?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Nosso <strong>encanador de emergência</strong> atende em toda a cidade. O tempo médio de chegada é de <strong>30 a 60 minutos</strong> após a confirmação via WhatsApp.</p>
+            </div>
+        </div>
+        
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <h2>Contato Encanador 24 Horas</h2>
+    <p>Ligue ou envie uma mensagem agora mesmo. Atendimento em todo o Guarujá.</p>
+    <p>📞 WhatsApp: <a href="https://wa.me/5513996197248">(13) 99619-7248</a></p>
+    <a href="https://wa.me/5513996197248" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Falar com Encanador 24h</a>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Eletricista 24 Horas Guarujá | Serviços Hidráulicos e Elétricos.</p> <!-- ANO ATUALIZADO -->
+  <p>Site desenvolvido por <a href="https://wa.me/5512988052097?text=Vim%20pelo%20link%20do%20eletricista24horasguaruja" target="_blank" style="color: #ff6600; text-decoration: none; font-weight: bold;">RSA Digital</a></p> <!-- LINK RSA DIGITAL ATUALIZADO -->
+</footer>
+
+<!-- Script para Menu Hamburguer e FAQ (Acordeão) -->
+<script>
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+          const parentItem = question.closest('.faq-item');
+          const isCurrentlyActive = parentItem.classList.contains('active');
+          document.querySelectorAll('.faq-item').forEach(item => { item.classList.remove('active'); });
+          if (!isCurrentlyActive) { parentItem.classList.add('active'); }
+      });
+  });
+  
+  const menuToggle = document.getElementById('menu-toggle');
+  const mainNav = document.getElementById('main-nav');
+  if (menuToggle && mainNav) {
+      menuToggle.addEventListener('click', () => { mainNav.classList.toggle('active'); });
+      mainNav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+              if (mainNav.classList.contains('active')) { mainNav.classList.remove('active'); }
+          });
+      });
+  }
+</script>
+
+</body>
+</html>
