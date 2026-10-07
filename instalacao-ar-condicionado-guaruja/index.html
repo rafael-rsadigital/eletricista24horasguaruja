@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instalação e Manutenção de Ar Condicionado em Guarujá 24h | Venda de Equipamentos</title>
+<meta name="description" content="Serviço completo de Ar Condicionado no Guarujá: Venda de equipamentos novos (Split, Janela, Inverter), instalação certificada, manutenção preventiva e limpeza. Atendimento 24h para emergências!">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<style>
+  /* Estilos de Tipografia e Base (Copiados do index.html) */
+  body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; color:#333; background:#f7f7f7; }
+
+  /* =====================
+      HEADER: Seção Hero com Imagem - Tema Azul/Gelo
+      ===================== */
+  header { 
+    /* AJUSTADO: Caminho da imagem subindo um nível para a raiz */
+    background-image: linear-gradient(rgba(0, 53, 128, 0.75), rgba(0, 53, 128, 0.75)), url('../ar-condicionado.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px; 
+    color:#fff; 
+    text-align:left;
+    /* Padding lateral para o header (desktop) */
+    padding:0px 20px 30px 20px;
+    position:relative; 
+    display:flex;
+    flex-direction: column; 
+    align-items:flex-end; 
+  }
+
+  /* Cores específicas de destaque (Tema Gelo/Claro) */
+  .highlight { color: #87ceeb; display: block; } /* Azul Celeste/Gelo */
+  .slogan { color: #87ceeb; } 
+
+  /* Cores de Botão (WhatsApp Laranja e Secundário Azul) */
+  .btn { display:inline-block; padding:12px 25px; background:#ff6600; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; transition:0.3s; margin-right: 15px; }
+  .btn:hover { background:#e65c00; }
+  .btn.whatsapp-hero { background: #ff6600; padding: 15px 30px; font-size: 1.1rem; margin-right: 15px; }
+  .btn.whatsapp-hero:hover { background: #e65c00; }
+  .btn.secondary-hero { background: #004aad; padding: 15px 30px; font-size: 1.1rem; margin-bottom: 10px; }
+  .btn.secondary-hero:hover { background: #003580; }
+  .feature-card i { color: #87ceeb; } /* Ícones Gelo */
+  h2 { color:#004aad; margin-bottom:20px; border-bottom: 2px solid #87ceeb; padding-bottom: 5px; }
+  .faq-question { border-left: 5px solid #87ceeb; color: #004aad; }
+  .faq-question:hover { background-color: #e6f7ff; }
+
+  /* Estilos de layout copiados do index.html para consistência */
+  .top-bar { 
+      width: 100%; 
+      display: flex; 
+      justify-content: flex-end; 
+      align-items: center; 
+      padding: 20px 20px 0 20px;
+  }
+  .menu-toggle { font-size: 1.5rem; color: #fff; cursor: pointer; display: none; }
+  .main-nav { width: 100%; background:#003580; display:flex; justify-content:center; gap:20px; padding:12px; flex-wrap:wrap; z-index:100; position: sticky; top: 0; }
+  .main-nav a { color:#fff; text-decoration:none; font-weight:bold; transition: color 0.3s; }
+  .main-nav a:hover { color: #ffcc00; }
+  
+  .hero-content { 
+    max-width: 1200px; 
+    width: 100%; 
+    padding: 0 20px 30px 20px; 
+    margin-top: auto; 
+  }
+  .hero-text-container { max-width: 600px; margin-bottom: 30px; }
+  header h1 { margin:0; font-size:3rem; line-height: 1.1; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); }
+  .description-text { margin:15px 0 25px; font-size:1.2rem; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); }
+  
+  .container { 
+    width:90%; 
+    max-width:1200px; 
+    margin:auto; 
+    padding:30px 20px; 
+  }
+  
+  section { margin-bottom:50px; }
+  footer { background:#222; color:#ddd; text-align:center; padding:25px 15px; }
+  footer a { color:#ff6600; text-decoration:none; }
+  .hero-features { display: flex; justify-content: flex-start; gap: 20px; margin-top: 40px; width: 100%; max-width: 600px; }
+  .feature-card { flex: 1; display: flex; flex-direction: column; align-items: flex-start; padding: 15px; background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 8px; color: #fff; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); }
+  .feature-card strong { font-size: 0.95rem; font-weight: 600; line-height: 1.2; }
+  .feature-card span { font-size: 0.8rem; font-weight: 400; opacity: 0.8; }
+  .faq-item { margin-bottom: 10px; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .faq-answer { overflow: hidden; transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out; padding: 0 15px; background: #fff; color: #333; max-height: 0; }
+  .faq-item.active .faq-answer { max-height: 500px; padding: 15px; }
+  .faq-question i { transition: transform 0.3s; }
+  .faq-item.active .faq-question i { transform: rotate(180deg); }
+  .service-img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+  .card { background:#fff; border-radius:10px; padding:20px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:0.3s; }
+  .card i { font-size:40px; color:#004aad; margin-bottom:15px; }
+
+  /* Responsividade Mobile */
+  @media (max-width: 768px) {
+      *, *::before, *::after {
+        box-sizing: border-box; 
+      }
+      .top-bar { 
+        display: flex; 
+        justify-content: flex-end; 
+        align-items: center; 
+        padding: 20px; 
+      }
+      .menu-toggle { display: block; margin-left: auto; }
+      .main-nav { display: none; flex-direction: column; position: absolute; top: 60px; right: 0; width: 80%; background: #003580; z-index: 90; padding: 0; box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3); }
+      .main-nav.active { display: flex; box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3); }
+      .main-nav a { padding: 12px 5px; display: block; text-align: center; width: 100%; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+      .hero-features { justify-content: center; max-width: 100%; margin-left: auto; margin-right: auto; flex-direction: column; align-items: center; }
+      .feature-card { width: 90%; max-width: 300px; align-items: center; text-align: center; flex-direction: column; }
+      header h1 { font-size: 2.5rem; }
+      .container {
+        padding: 20px; 
+        width: 100%; 
+      }
+      .hero-content {
+        padding: 0 20px 30px 20px; 
+      }
+  }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <i class="fas fa-bars menu-toggle" id="menu-toggle"></i>
+    </div>
+    
+    <nav class="main-nav" id="main-nav">
+      <a href="../">Eletricista</a> <!-- AJUSTADO -->
+      <a href="../encanador-guaruja/">Encanador</a> <!-- AJUSTADO -->
+      <a href="#ar-condicionado">Ar Condicionado</a>
+      <a href="../#faq">FAQ</a> <!-- AJUSTADO -->
+      <a href="../#depoimentos">Depoimentos</a> <!-- AJUSTADO -->
+      <a href="../blog/">Blog</a> <!-- AJUSTADO -->
+      <a href="../#contato">Contato</a> <!-- AJUSTADO -->
+    </nav>
+    
+  <div class="hero-content">
+    <div class="hero-text-container">
+      <h1>Ar Condicionado em <span class="highlight">Guarujá</span></h1>
+      <p class="slogan">Conforto e Ar Fresco com Rapidez! ❄️</p>
+      <p class="description-text">Serviço completo de <strong>Instalação, Manutenção e Limpeza</strong> de Ar Condicionado em toda a região do Guarujá. <strong>Venda de equipamentos novos</strong> com garantia e preço justo.</p>
+    </div>
+    
+    <div>
+        <a href="https://wa.me/5513996197248?text=Ol%C3%A1!%20Vi%20a%20p%C3%A1gina%20de%20Ar%20Condicionado%20no%20Guaruj%C3%A1%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20[Instalação/Manutenção]." class="btn whatsapp-hero" target="_blank"><i class="fab fa-whatsapp"></i> Fale com o Técnico e Peça seu Orçamento</a>
+        <a href="#servicos" class="btn secondary-hero">Ver Serviços</a>
+    </div>
+
+    <div class="hero-features">
+        <div class="feature-card">
+            <i class="fas fa-certificate"></i>
+            <strong>Instalação Certificada</strong>
+            <span>Garantia de Fábrica Mantida</span>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-hand-holding-usd"></i>
+            <strong>Melhor Preço</strong>
+            <span>Equipamentos e Serviço</span>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-spray-can"></i>
+            <strong>Limpeza Técnica</strong>
+            <span>Ar Puro e Saúde</span>
+        </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <section id="venda">
+    <h2>Venda de Ar Condicionado Novo em Guarujá</h2>
+    <p>Somos distribuidores e revendedores autorizados das principais marcas de ar condicionado (Inverter, Split e Janela). Ao comprar e instalar conosco, você garante:</p>
+    <div class="services">
+      <div class="card">
+        <i class="fas fa-tag"></i>
+        <h3>Preço de Fábrica</h3>
+        <p>Acesso a equipamentos de última geração com <strong>preços competitivos</strong>, ideais para o clima do litoral.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-bolt"></i>
+        <h3>Inverter e Economia</h3>
+        <p>Consultoria especializada em modelos <strong>Inverter</strong>, que garantem <strong>economia de energia</strong> e maior durabilidade.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-check-double"></i>
+        <h3>Instalação e Garantia</h3>
+        <p>A instalação é feita pela mesma equipe de venda, assegurando que a garantia de fábrica do seu equipamento seja <strong>100% válida</strong>.</p>
+      </div>
+    </div>
+    <a href="https://wa.me/5513996197248?text=Ol%C3%A1!%20Gostaria%20de%20saber%20os%20preços%20e%20modelos%20de%20Ar%20Condicionado%20Split%20Inverter%20que%20vocês%20vendem%20no%20Guarujá." target="_blank" class="btn whatsapp-hero" style="margin-right: 0;"><i class="fab fa-whatsapp"></i> Consultar Modelos e Preços</a>
+  </section>
+
+  <section id="servicos">
+    <h2>Instalação, Manutenção e Reparo (Serviços Técnicos)</h2>
+    <!-- AJUSTADO: Caminho subindo um nível -->
+    <img src="../ar-condicionado.jpg" alt="Imagem de técnico instalando ar condicionado split." class="service-img" onerror="this.onerror=null;this.src='https://placehold.co/600x200/004aad/ffffff?text=Manutenção%20A/C%20Guarujá'">
+    <p>Com o clima quente do Guarujá, o conforto e a qualidade do ar são essenciais. Nossa equipe é especializada em todas as etapas do ciclo de vida do seu ar condicionado.</p>
+    
+    <p><strong>Nossos Serviços Técnicos Incluem:</strong></p>
+    <ul>
+      <li><strong>Instalação Profissional:</strong> Instalação certificada e conforme as normas técnicas.</li>
+      <li><strong>Manutenção Preventiva:</strong> Limpeza técnica de filtros, carga de gás e testes.</li>
+      <li><strong>Limpeza e Higienização:</strong> Remoção de fungos e bactérias para garantir ar puro.</li>
+      <li><strong>Reparos e Emergências 24h:</strong> Conserto de vazamentos e troca de peças.</li>
+    </ul>
+    <a href="https://wa.me/5513996197248?text=Ol%C3%A1!%20Vi%20a%20p%C3%A1gina%20e%20preciso%20de%20um%20t%C3%A9cnico%20para%20manuten%C3%A7%C3%A3o%20em%20Ar%20Condicionado%20no%20Guaruj%C3%A1." target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Solicitar Manutenção de A/C</a>
+  </section>
+  
+  <section id="faq-ac">
+    <h2>Perguntas Frequentes (FAQ) de Ar Condicionado</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Quais tipos de Ar Condicionado vocês vendem e instalam?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Nós vendemos e instalamos modelos <strong>Split, Janela, Inverter e Cassete</strong>. Oferecemos consultoria para definir os BTUs ideais.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Por que a limpeza do ar condicionado é importante no Guarujá?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>A maresia acelera o acúmulo de sujeira. A <strong>limpeza técnica</strong> previne doenças e reduz o consumo de energia.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Qual é o tempo médio e o custo de uma instalação?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Em média 3 a 4 horas. O custo depende da complexidade. Oferecemos orçamento rápido via WhatsApp.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato Ar Condicionado Guarujá</h2>
+    <p>Orçamento para Venda, Instalação ou Serviço 24h. Atendemos toda a Baixada Santista.</p>
+    <p>📞 WhatsApp: <a href="https://wa.me/5513996197248">(13) 99619-7248</a></p>
+    <a href="https://wa.me/5513996197248?text=Ol%C3%A1!%20Vi%20a%20p%C3%A1gina%20de%20Ar%20Condicionado%20no%20Guaruj%C3%A1%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20[Instalação/Manutenção]." target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp Agora</a>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Eletricista 24 Horas Guarujá. Todos os direitos reservados.</p>
+  <p>Site desenvolvido por <a href="https://wa.me/5512988052097?text=Vim%20pelo%20link%20do%20eletricista24horasguaruja" target="_blank" style="color: #ff6600; text-decoration: none; font-weight: bold;">RSA Digital</a></p>
+</footer>
+
+<script>
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+          const parentItem = question.closest('.faq-item');
+          const isCurrentlyActive = parentItem.classList.contains('active');
+          document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+          if (!isCurrentlyActive) parentItem.classList.add('active');
+      });
+  });
+  
+  const menuToggle = document.getElementById('menu-toggle');
+  const mainNav = document.getElementById('main-nav');
+  if (menuToggle && mainNav) {
+      menuToggle.addEventListener('click', () => mainNav.classList.toggle('active'));
+      mainNav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+              if (mainNav.classList.contains('active')) mainNav.classList.remove('active');
+          });
+      });
+  }
+</script>
+
+</body>
+</html>
