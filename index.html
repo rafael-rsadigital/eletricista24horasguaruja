@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eletricista 24 Horas Guarujá | Serviços Emergenciais</title>
+<meta name="description" content="Eletricista 24 horas em Guarujá. Atendimento rápido, confiável e com garantia em serviços elétricos, encanamento e refrigeração. Ligue já no WhatsApp!">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<!-- ============================================== -->
+<!-- NOVO SCHEMA MARKUP PARA FAQPAGE (MELHORIA SEO) -->
+<!-- ============================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O eletricista 24h atende mesmo de madrugada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim! Nosso serviço de eletricista é verdadeiramente 24 horas. Atendemos todas as emergências elétricas (curto-circuito, falta de energia, cheiro de queimado) em Guarujá a qualquer momento, incluindo madrugadas e feriados. Ligue ou chame no WhatsApp para atendimento imediato."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a área de cobertura do serviço de eletricista no Guarujá?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Atendemos todo o Guarujá (Vicente de Carvalho, Enseada, Pitangueiras, Astúrias, etc.), além de outras cidades da Baixada Santista, como Santos, Bertioga e Cubatão. Consulte-nos para outras localidades."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vocês aceitam cartão de crédito ou débito para serviços elétricos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Para sua conveniência, aceitamos PIX, dinheiro e cartões de débito e crédito. A emissão de Nota Fiscal é feita para todos os serviços, garantindo transparência total e segurança."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Os serviços elétricos possuem garantia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Com certeza. Todos os serviços prestados possuem garantia. O prazo mínimo é de 90 dias, mas pode variar dependendo da complexidade do trabalho e dos componentes substituídos, sendo sempre informado no orçamento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quais são os principais sinais de que preciso de um eletricista de emergência?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Você deve chamar um eletricista de emergência 24h imediatamente se notar cheiro de queimado, fumaça saindo de tomadas ou quadros de energia, falta total de luz na residência ou se o disjuntor desarmar repetidamente sem motivo aparente. Estes são sinais de risco grave de incêndio ou choque."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vocês fazem instalação e manutenção de ar condicionado em Guarujá?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, além dos serviços elétricos, nossa equipe é especializada em refrigeração e ar-condicionado. Oferecemos instalação, manutenção preventiva e reparo de todos os modelos de ar-condicionado, atendendo residências e comércios no Guarujá e região."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como funciona o orçamento de emergência noturno?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Em casos de emergência 24h, o cliente entra em contato pelo WhatsApp, descreve o problema e, após uma avaliação inicial, um técnico é deslocado. O custo da visita e o valor do serviço são comunicados de forma clara antes de qualquer reparo ser iniciado. Nossa prioridade é a segurança e a rapidez no atendimento."
+      }
+    }
+  ]
+}
+</script>
+<style>
+  /* Base e Tipografia */
+  body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; color:#333; background:#f7f7f7; }
+
+  /* =====================
+      HEADER: Seção Hero com Imagem
+      ===================== */
+  header { 
+    /* CORREÇÃO: Voltando para a grafia original do arquivo local */
+    background-image: linear-gradient(rgba(0, 53, 128, 0.75), rgba(0, 53, 128, 0.75)), url('foto-profissional.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px; 
+    color:#fff; 
+    text-align:left;
+    padding:0px 20px 30px 20px;
+    position:relative; 
+    display:flex;
+    flex-direction: column; 
+    align-items:flex-end; 
+  }
+  
+  /* =====================
+      NAVIGAÇÃO (CORREÇÃO DE LAYOUT)
+      ===================== */
+  .top-bar {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end; 
+      align-items: center;
+      padding-top: 20px; 
+  }
+
+  /* Estilo do botão Hamburguer (somente visível no mobile) */
+  .menu-toggle {
+      font-size: 1.5rem;
+      color: #fff;
+      cursor: pointer;
+      display: none;
+  }
+
+  /* Ajuste no Nav para ficar no topo do Header e fixo na rolagem */
+  .main-nav { 
+      width: 100%;
+      background:#003580; 
+      display:flex; 
+      justify-content:center; 
+      gap:20px; 
+      padding:12px; 
+      flex-wrap:wrap; 
+      z-index:100; 
+      position: sticky;
+      top: 0;
+  }
+  .main-nav a { 
+      color:#fff; 
+      text-decoration:none; 
+      font-weight:bold; 
+      transition: color 0.3s;
+  }
+  .main-nav a:hover {
+      color: #ffcc00; 
+  }
+
+  .hero-content {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px 30px 20px; 
+    margin-top: auto;
+  }
+
+  .hero-text-container {
+    max-width: 600px; 
+    margin-bottom: 30px;
+  }
+
+  header h1 { 
+    margin:0; 
+    font-size:3rem;
+    line-height: 1.1;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .highlight {
+    color: #ff6600; 
+    display: block; 
+  }
+
+  .slogan {
+    margin: 5px 0 10px; 
+    font-size: 1.3rem; 
+    font-weight: bold;
+    color: #ffcc00; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+
+  .description-text { 
+    margin:15px 0 25px; 
+    font-size:1.2rem; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  .btn { display:inline-block; padding:12px 25px; background:#ff6600; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; transition:0.3s; margin-right: 15px; }
+  .btn:hover { background:#e65c00; }
+  
+  .btn.whatsapp-hero {
+    background: #ff6600; 
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    margin-right: 15px; 
+  }
+  .btn.whatsapp-hero:hover {
+    background: #e65c00;
+  }
+  .btn.secondary-hero {
+    background: #004aad; 
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .btn.secondary-hero:hover {
+    background: #003580;
+  }
+
+  .hero-features {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 20px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .feature-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px); 
+  }
+  
+  .feature-card i {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #ff6600; 
+  }
+  
+  .feature-card strong {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .feature-card span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+
+  .container { width:90%; max-width:1200px; margin:auto; padding:30px 0; }
+  section { margin-bottom:50px; }
+  h2 { color:#004aad; margin-bottom:20px; border-bottom: 2px solid #ff6600; padding-bottom: 5px; }
+  .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+  
+  .service-img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .card { background:#fff; border-radius:10px; padding:20px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:0.3s; }
+  .card:hover { transform:translateY(-5px); box-shadow:0 6px 15px rgba(0,0,0,0.15); }
+  .card i { font-size:40px; color:#004aad; margin-bottom:15px; }
+  ul { padding-left:20px; }
+  footer { background:#222; color:#ddd; text-align:center; padding:25px 15px; }
+  footer a { color:#ff6600; text-decoration:none; }
+  
+  .carousel-container {
+      overflow-x: hidden; 
+      padding: 0;
+      margin-bottom: 30px;
+      position: relative; 
+  }
+  
+  .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 0;
+  }
+
+  .review-card {
+      min-width: unset; 
+      flex-shrink: 0; 
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid #004aad; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .review-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+  }
+
+  .review-avatar {
+      width: 40px;
+      height: 40px;
+      background: #004aad;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-right: 15px;
+  }
+
+  .review-info strong {
+      display: block;
+      color: #004aad;
+      font-size: 1.1rem;
+      line-height: 1.2;
+  }
+  .review-info span {
+      font-size: 0.9rem;
+      color: #666;
+  }
+
+  .review-stars .fas {
+      color: #ffc107; 
+      margin-right: 2px;
+  }
+
+  .review-text {
+      font-style: italic;
+      color: #333;
+      margin: 10px 0;
+  }
+  
+  .faq-item {
+      margin-bottom: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #f0f8ff; 
+      border-left: 5px solid #004aad; 
+      cursor: pointer;
+      font-weight: bold;
+      color: #004aad;
+      transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .faq-question:hover {
+      background-color: #eaf3ff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  }
+
+  .faq-question i {
+      transition: transform 0.3s;
+  }
+
+  .faq-item.active .faq-question i {
+      transform: rotate(180deg);
+  }
+  
+  .faq-answer {
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+      padding: 0 15px;
+      background: #fff;
+      color: #333;
+      max-height: 0; 
+  }
+  .faq-item.active .faq-answer {
+      max-height: 500px; 
+      padding: 15px;
+  }
+
+  @media (min-width: 769px) {
+      .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .menu-toggle {
+          display: none;
+      }
+      .top-bar {
+          display: none;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .top-bar {
+          display: flex; 
+          justify-content: flex-end;
+          align-items: center;
+          padding: 0 20px; 
+      }
+      .menu-toggle {
+          display: block; 
+          margin-left: auto; 
+      }
+      
+      .main-nav {
+          display: none; 
+          flex-direction: column;
+          position: absolute;
+          top: 60px; 
+          right: 0; 
+          width: 80%; 
+          background: #003580; 
+          z-index: 90;
+          padding: 0;
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .main-nav.active {
+          display: flex;
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+      }
+      
+      .main-nav a {
+        padding: 12px 5px;
+        display: block;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .hero-content {
+          padding: 0 0 30px 0; 
+      }
+
+      .hero-features {
+        justify-content: center; 
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column; 
+        align-items: center;
+      }
+      .feature-card {
+        width: 90%; 
+        max-width: 300px;
+        align-items: center; 
+        text-align: center;
+        flex-direction: column; 
+      }
+      .feature-card i {
+          margin-right: 0;
+          margin-bottom: 5px;
+      }
+
+      .feature-card strong, .feature-card span {
+          display: block; 
+      }
+      
+      .btn.whatsapp-hero, .btn.secondary-hero {
+          margin: 10px 5px; 
+      }
+  }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <i class="fas fa-bars menu-toggle" id="menu-toggle"></i>
+    </div>
+    
+    <nav class="main-nav" id="main-nav">
+      <a href="#eletricista">Eletricista</a>
+      <a href="#outros-servicos">Outros Serviços</a>
+      <a href="#faq">FAQ</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="blog/">Blog</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    
+  <div class="hero-content">
+
+    <div class="hero-text-container">
+      <h1>Eletricista 24 Horas em <span class="highlight">Guarujá</span></h1>
+      <p class="slogan">Correndo para iluminar você! ⚡</p>
+      <p class="description-text">Atendimento emergencial rápido e confiável. Serviços elétricos residenciais, comerciais e industriais com garantia.</p>
+    </div>
+    
+    <div>
+        <a href="https://wa.me/5513996197248" class="btn whatsapp-hero" target="_blank"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+        <a href="#eletricista" class="btn secondary-hero">Ver Serviços</a>
+    </div>
+
+    <div class="hero-features">
+        <div class="feature-card">
+            <i class="fas fa-bolt"></i>
+            <strong>Atendimento Rápido</strong>
+            <span>Emergências 24/7</span>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-shield-alt"></i>
+            <strong>Garantia Total</strong>
+            <span>Em todos serviços</span>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-coins"></i>
+            <strong>Preço Justo</strong>
+            <span>Sem surpresas</span>
+        </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <section id="eletricista">
+    <h2>Eletricista 24 Horas em Guarujá</h2>
+    <!-- CORREÇÃO: Grafia da imagem voltando para profissional -->
+    <img src="foto-profissional.jpg" alt="Imagem de um eletricista trabalhando em painel de disjuntores." class="service-img" onerror="this.onerror=null;this.src='https://placehold.co/600x200/004aad/ffffff?text=Eletricista%20Profissional'">
+    <p>Atendimento rápido em qualquer dia e horário, inclusive feriados. Serviços residenciais, comerciais, industriais e emergenciais 24h.</p>
+    <ul>
+      <li>Instalações e reparos elétricos</li>
+      <li>Troca de disjuntores e fiação</li>
+      <li>Identificação e correção de curtos-circuitos</li>
+      <li>Instalação de iluminação interna e externa</li>
+      <li>Projetos elétricos para obras e construções</li>
+      <li>Manutenção de bombas elétricas e painéis</li>
+      <li>Atendimento especializado para indústrias</li>
+      <li>Instalação e Manutenção de DR e DPS</li>
+    </ul>
+    <a href="https://wa.me/5513996197248" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Solicitar atendimento agora</a>
+  </section>
+
+  <section id="outros-servicos">
+    <h2>Outros Serviços</h2>
+    <div class="services">
+      <div class="card">
+        <i class="fas fa-water"></i>
+        <img src="encanador.jpg" alt="Imagem de tubulações de encanamento." class="service-img" onerror="this.onerror=null;this.src='https://placehold.co/600x200/004aad/ffffff?text=Encanamento'">
+        <h3>Encanador</h3>
+        <p>Soluções rápidas para vazamentos, entupimentos e manutenção hidráulica.</p>
+        <a href="encanador-guaruja/" class="btn">Saiba mais</a>
+      </div>
+      <div class="card">
+        <i class="fas fa-snowflake"></i>
+        <img src="ar-condicionado.jpg" alt="Imagem de um ar condicionado split moderno." class="service-img" onerror="this.onerror=null;this.src='https://placehold.co/600x200/004aad/ffffff?text=Ar%20Condicionado'">
+        <h3>Refrigeração & Ar Condicionado</h3>
+        <p>Instalação, manutenção e venda de ar-condicionado. Serviços completos de refrigeração.</p>
+        <a href="instalacao-ar-condicionado-guaruja/" class="btn">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="missao">
+    <h2>Missão & Valores</h2>
+    <p><strong>Missão:</strong> Levar segurança e tranquilidade para clientes do Guarujá com soluções elétricas rápidas e confiáveis, a qualquer hora do dia ou da noite.</p>
+    <p><strong>Valores:</strong> Compromisso, honestidade, agilidade, qualidade e respeito ao cliente.</p>
+  </section>
+
+  <section id="faq">
+    <h2>Perguntas Frequentes (FAQ)</h2>
+    <div class="faq-container">
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>O eletricista 24h atende mesmo de madrugada?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Sim! Nosso serviço é verdadeiramente <strong>24 horas</strong>. Atendemos todas as <strong>emergências elétricas</strong> (curto-circuito, falta de energia, cheiro de queimado) em Guarujá a qualquer momento, incluindo madrugadas e feriados. Ligue ou chame no WhatsApp para atendimento imediato.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Quais são os principais sinais de que preciso de um eletricista de emergência no Guarujá?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Você deve chamar um <strong>eletricista de emergência 24h</strong> imediatamente se notar <strong>cheiro de queimado</strong>, fumaça saindo de tomadas ou quadros de energia, <strong>falta total de luz</strong> na residência ou se o disjuntor desarmar repetidamente sem motivo aparente.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Como funciona o orçamento de emergência noturno para serviços elétricos?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Em casos de emergência 24h, o cliente entra em contato pelo <strong>WhatsApp</strong>, descreve o problema e, após uma avaliação inicial, um técnico é deslocado. O custo da visita e o valor do serviço são comunicados antes.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Qual a área de cobertura do serviço de eletricista no Guarujá?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Atendemos todo o <strong>Guarujá</strong> (Vicente de Carvalho, Enseada, Pitangueiras, Astúrias, etc.), além de Santos, Bertioga e Cubatão.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Vocês aceitam cartão de crédito ou débito para serviços elétricos?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Sim. Aceitamos <strong>PIX, dinheiro</strong> e <strong>cartões</strong>. A emissão de Nota Fiscal é feita para todos os serviços.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Vocês fazem instalação e manutenção de ar condicionado em Guarujá?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Sim, nossa equipe é especializada em refrigeração e <strong>ar-condicionado</strong>.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Os serviços elétricos possuem garantia?</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Com certeza. Todos os serviços prestados possuem <strong>garantia</strong>.</p>
+            </div>
+        </div>
+
+    </div>
+  </section>
+  
+  <section id="depoimentos">
+    <h2>Depoimentos de Clientes Reais</h2>
+    <div class="carousel-container">
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+              <div class="review-avatar">RA</div>
+              <div class="review-info">
+                  <strong>Regina Andrade</strong>
+                  <span>Cliente de Emergência</span>
+              </div>
+          </div>
+          <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"Fiquei sem energia a noite... Milton chegou em 5 minutos. Resolveu com eficiência e preço justo."</p>
+          <span style="color:#004aad; font-size:0.9em; font-weight:bold;"><i class="fas fa-check-circle"></i> Atendimento Rápido às 21h</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+              <div class="review-avatar">VM</div>
+              <div class="review-info">
+                  <strong>Valdenicio Marques</strong>
+                  <span>Cliente Verificado</span>
+              </div>
+          </div>
+          <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"Cumpriu o agendamento com qualidade e educação. Com certeza irei chamar para outros serviços."</p>
+          <span style="color:#004aad; font-size:0.9em; font-weight:bold;"><i class="fas fa-check-circle"></i> Qualidade e Educação</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+              <div class="review-avatar">AD</div>
+              <div class="review-info">
+                  <strong>Allan Darkness</strong>
+                  <span>Cliente Comercial</span>
+              </div>
+          </div>
+          <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"Excelente profissional, sem gambiarra. Atendimento 24 Horas de verdade."</p>
+          <span style="color:#004aad; font-size:0.9em; font-weight:bold;"><i class="fas fa-check-circle"></i> 24 Horas de Verdade</span>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-header">
+              <div class="review-avatar">JT</div>
+              <div class="review-info">
+                  <strong>Julio Tavares</strong>
+                  <span>Cliente de Emergência</span>
+              </div>
+          </div>
+          <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"Serviço excelente! Prático e eficiente em um momento de emergência."</p>
+          <span style="color:#004aad; font-size:0.9em; font-weight:bold;"><i class="fas fa-check-circle"></i> Disponibilidade Noturna</span>
+        </div>
+      </div>
+    </div>
+    <a href="https://maps.app.goo.gl/QsF4ifXz7X3uUhKS6" target="_blank" class="btn" style="margin-top:10px;"><i class="fas fa-star"></i> Consultar todos no Google</a>
+  </section>
+
+  <section id="blog">
+      <h2>Blog: Dicas de Eletricidade e Segurança</h2>
+      <p>Confira nossa primeira postagem com dicas essenciais para a segurança elétrica no litoral:</p>
+      <div class="card" style="text-align:left;">
+          <h3><a href="blog/" style="color:#004aad; text-decoration:none;">Curto-Circuito em Guarujá: Como Evitar e Chamar o 24h</a></h3>
+          <p>Descubra como a maresia afeta sua fiação e aprenda a identificar os 3 sinais de alerta.</p>
+          <a href="blog/" class="btn" style="padding: 8px 15px; font-size: 0.9rem;">Continuar Lendo</a>
+      </div>
+  </section>
+
+  <section id="pagamento">
+    <h2>Formas de Pagamento & Garantia</h2>
+    <p>Aceitamos <strong>PIX, dinheiro e cartões</strong>. Emitimos Nota Fiscal.</p>
+    <p><em>*Todos os serviços possuem garantia.</em></p>
+  </section>
+
+  <section id="atuacao">
+    <h2>Área de Atuação</h2>
+    <p>Atendimento em todo o Guarujá, Vicente de Carvalho, Enseada, Pitangueiras, Asturias, condomínios Iporanga, Santos, Bertioga e Cubatão.</p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>📞 WhatsApp: <a href="https://wa.me/5513996197248">(13) 99619-7248</a></p>
+    <a href="https://wa.me/5513996197248" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Falar agora no WhatsApp</a>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Eletricista 24 Horas Guarujá. Todos os direitos reservados.</p>
+  <p>Site desenvolvido por <a href="https://wa.me/5512988052097?text=Vim%20pelo%20link%20do%20eletricista24horasguaruja" target="_blank" style="color: #ff6600; text-decoration: none; font-weight: bold;">RSA Digital</a></p>
+</footer>
+
+<a href="https://wa.me/5513996197248" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+          const parentItem = question.closest('.faq-item');
+          const isCurrentlyActive = parentItem.classList.contains('active');
+          document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+          if (!isCurrentlyActive) parentItem.classList.add('active');
+      });
+  });
+  
+  const menuToggle = document.getElementById('menu-toggle');
+  const mainNav = document.getElementById('main-nav');
+  if (menuToggle && mainNav) {
+      menuToggle.addEventListener('click', () => mainNav.classList.toggle('active'));
+      mainNav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+              if (mainNav.classList.contains('active')) mainNav.classList.remove('active');
+          });
+      });
+  }
+</script>
+
+</body>
+</html>
