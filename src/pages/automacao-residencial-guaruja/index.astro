@@ -1,0 +1,133 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+
+const title = 'Automação Residencial em Guarujá | Alexa, Fechaduras e Casa Inteligente';
+const description = 'Automação residencial em Guarujá: instalação e configuração de Alexa, fechaduras digitais, interruptores, tomadas, iluminação e sensores inteligentes. Consulte atendimento.';
+const canonical = 'https://www.eletricista24horasguaruja.com.br/automacao-residencial-guaruja/';
+const whatsapp = 'https://wa.me/5513996197248?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20automa%C3%A7%C3%A3o%20residencial%20em%20Guaruj%C3%A1.';
+const faqs = [
+  ['O que é automação residencial?', 'É a integração de dispositivos inteligentes para controlar funções da casa, como iluminação, tomadas, fechaduras e outros equipamentos, por aplicativo, comandos de voz ou rotinas automatizadas.'],
+  ['É possível controlar a casa usando a Alexa?', 'Sim. Dispositivos compatíveis podem ser configurados para funcionar com a Alexa, permitindo comandos de voz e rotinas. A integração depende dos modelos dos equipamentos e da rede disponível no imóvel.'],
+  ['Quais dispositivos podem ser instalados?', 'Conforme a compatibilidade e a necessidade do imóvel, podem ser instalados ou configurados interruptores e tomadas inteligentes, lâmpadas, sensores, fechaduras digitais, controles e outros dispositivos para casa inteligente.'],
+  ['É necessário ter internet para usar automação residencial?', 'A maioria das soluções conectadas depende de uma rede Wi-Fi ou de um hub específico. Algumas funções locais podem continuar disponíveis sem internet, conforme o equipamento. A estrutura é verificada antes da instalação.'],
+  ['Posso automatizar uma casa que já está pronta?', 'Em muitos casos, sim. Existem dispositivos que podem ser adicionados a instalações existentes, mas é necessário avaliar a fiação, as caixas, a rede Wi-Fi e a compatibilidade dos equipamentos.'],
+  ['O atendimento de automação residencial é feito em Guarujá?', 'Sim. O atendimento é voltado a Guarujá e localidades próximas, mediante consulta de disponibilidade para o endereço.']
+];
+---
+<SiteLayout title={title} description={description} canonical={canonical}>
+  <Fragment slot="head">
+    <meta property="og:image" content="https://www.eletricista24horasguaruja.com.br/images/foto-profissional.jpg" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context':'https://schema.org',
+      '@type':'Service',
+      name:'Automação residencial em Guarujá',
+      serviceType:'Instalação e configuração de dispositivos de automação residencial',
+      description,
+      provider:{'@type':'Electrician',name:'Eletricista 24 Horas Guarujá',url:'https://www.eletricista24horasguaruja.com.br/'},
+      areaServed:{'@type':'City',name:'Guarujá',containedInPlace:{'@type':'State',name:'São Paulo'}}
+    })} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context':'https://schema.org',
+      '@type':'FAQPage',
+      mainEntity:faqs.map(([question,answer])=>({'@type':'Question',name:question,acceptedAnswer:{'@type':'Answer',text:answer}}))
+    })} />
+  </Fragment>
+
+  <section class="page-hero">
+    <div class="page-wrap">
+      <div class="breadcrumbs"><a href="/">Início</a> / Serviços / Automação residencial</div>
+      <span class="section-kicker">Casa inteligente</span>
+      <h1>Automação residencial em Guarujá</h1>
+      <p>Mais praticidade e controle no dia a dia. Instalação e configuração de Alexa, fechaduras digitais, iluminação inteligente, interruptores, tomadas e outros dispositivos conectados.</p>
+      <div class="hero-actions" style="margin-top:24px">
+        <a class="button button-primary" href={whatsapp} target="_blank" rel="noopener noreferrer">Solicitar orçamento ↗</a>
+        <a class="button" href="#solucoes" style="color:var(--navy);border:1px solid #cbd3de">Ver soluções</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-wrap">
+    <section class="section" id="solucoes">
+      <div class="section-heading">
+        <span class="section-kicker">Soluções conectadas</span>
+        <h2>O que pode ser automatizado na sua casa?</h2>
+        <p>A instalação é planejada conforme os equipamentos, a estrutura elétrica e a conectividade disponíveis no imóvel.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><span class="service-icon">◉</span><h3>Alexa e comando de voz</h3><p>Configuração de assistentes virtuais, dispositivos compatíveis, comandos de voz e rotinas para facilitar tarefas do dia a dia.</p></article>
+        <article class="service-card"><span class="service-icon">▣</span><h3>Fechaduras digitais</h3><p>Instalação e configuração de fechaduras eletrônicas e inteligentes, conforme o modelo e as características da porta.</p></article>
+        <article class="service-card"><span class="service-icon">☼</span><h3>Iluminação inteligente</h3><p>Automação de lâmpadas, circuitos e pontos de iluminação para controle pelo celular, voz ou programação.</p></article>
+        <article class="service-card"><span class="service-icon">▤</span><h3>Interruptores inteligentes</h3><p>Instalação e configuração de interruptores conectados para controlar a iluminação e criar rotinas.</p></article>
+        <article class="service-card"><span class="service-icon">⌁</span><h3>Tomadas inteligentes</h3><p>Controle de equipamentos compatíveis por aplicativo ou assistente virtual, respeitando a capacidade elétrica de cada ponto.</p></article>
+        <article class="service-card"><span class="service-icon">⌖</span><h3>Sensores e automações</h3><p>Configuração de sensores e acionamentos automáticos, de acordo com os dispositivos e a plataforma escolhidos.</p></article>
+        <article class="service-card"><span class="service-icon">▱</span><h3>Cortinas e outros dispositivos</h3><p>Integração de motores e equipamentos inteligentes compatíveis para ampliar o controle dos ambientes.</p></article>
+        <article class="service-card"><span class="service-icon">⌂</span><h3>Integração da casa inteligente</h3><p>Configuração de dispositivos em aplicativos, redes e plataformas compatíveis, reunindo funções em uma experiência mais simples.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="split">
+        <div>
+          <span class="section-kicker">Controle do seu jeito</span>
+          <h2>Acione dispositivos pelo celular ou por voz</h2>
+          <p>Com os equipamentos compatíveis e configurados corretamente, é possível controlar diferentes funções da residência pelo aplicativo, por comandos de voz ou por rotinas programadas.</p>
+          <ul class="check-list">
+            <li>Acender e apagar luzes por comando de voz</li>
+            <li>Controlar dispositivos pelo celular</li>
+            <li>Criar rotinas para horários e situações do cotidiano</li>
+            <li>Integrar equipamentos compatíveis com Alexa</li>
+          </ul>
+        </div>
+        <img src="/images/foto-profissional.jpg" alt="Atendimento de serviços elétricos e instalação em Guarujá." loading="lazy" decoding="async" />
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <span class="section-kicker">Instalação e configuração</span>
+        <h2>Automação residencial em imóveis novos ou já construídos</h2>
+        <p>Nem toda automação exige uma reforma completa. A viabilidade depende dos dispositivos escolhidos, da instalação elétrica existente, da conexão de internet e da compatibilidade entre os equipamentos.</p>
+      </div>
+      <div class="content-panel">
+        <h2>Avaliação antes da instalação</h2>
+        <p>Antes de definir a solução, são considerados o que o cliente deseja automatizar, os modelos dos dispositivos, a rede Wi-Fi, os pontos elétricos e as condições de instalação. Assim, é possível orientar a escolha dos equipamentos e evitar incompatibilidades.</p>
+        <p>Quando necessário, também são avaliados ajustes elétricos para que os dispositivos funcionem de forma adequada e segura.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="split">
+        <div>
+          <span class="section-kicker">Guarujá e região</span>
+          <h2>Instalação de automação residencial em Guarujá</h2>
+          <p>Atendimento para casas, apartamentos e imóveis de temporada em Guarujá. Consulte disponibilidade para Enseada, Pernambuco, Jardim Acapulco, Astúrias, Pitangueiras, Tombo, Vicente de Carvalho e demais localidades.</p>
+          <p>A disponibilidade e a viabilidade do serviço são confirmadas conforme o endereço e o tipo de instalação.</p>
+          <a class="button button-primary" href={whatsapp} target="_blank" rel="noopener noreferrer">Consultar atendimento ↗</a>
+        </div>
+        <div class="content-panel">
+          <h2>Como solicitar um orçamento</h2>
+          <ol>
+            <li>Conte quais funções deseja automatizar.</li>
+            <li>Informe se já possui Alexa ou dispositivos inteligentes.</li>
+            <li>Envie fotos ou modelos dos equipamentos, se tiver.</li>
+            <li>Combine a avaliação e consulte o orçamento.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><span class="section-kicker">Perguntas frequentes</span><h2>Dúvidas sobre automação residencial</h2></div>
+      <div class="faq-grid">
+        {faqs.map(([question,answer])=><details class="faq-item"><summary>{question}</summary><div class="faq-answer">{answer}</div></details>)}
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta-band">
+        <div><h2>Quer deixar sua casa mais inteligente?</h2><p>Explique o que deseja automatizar e consulte as possibilidades para seu imóvel em Guarujá.</p></div>
+        <a class="button button-primary" href={whatsapp} target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp ↗</a>
+      </div>
+    </section>
+  </div>
+</SiteLayout>
