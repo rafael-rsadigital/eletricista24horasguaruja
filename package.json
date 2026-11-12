@@ -1,0 +1,16 @@
+{
+  "name": "eletricista-24-horas-guaruja",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "7.4.10"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}

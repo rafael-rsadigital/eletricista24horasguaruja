@@ -1,0 +1,89 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+const title = 'Eletricista 24 Horas em Guarujá | Emergência e Serviços Elétricos';
+const description = 'Eletricista 24 horas em Guarujá para emergências, atendimento noturno, instalações e reparos elétricos. Troca e manutenção de aquecedor boiler. Chame no WhatsApp.';
+const canonical = 'https://www.eletricista24horasguaruja.com.br/';
+const faqs = [
+  ['O eletricista 24h atende mesmo de madrugada?', 'Sim. O atendimento é realizado 24 horas, inclusive durante a madrugada, finais de semana e feriados. Entre em contato pelo WhatsApp, descreva a situação e consulte a disponibilidade para o seu endereço.'],
+  ['Quais são os sinais de que preciso de um eletricista de emergência?', 'Cheiro de queimado, fumaça em tomadas ou no quadro elétrico, faíscas, falta de energia em parte da instalação e disjuntores que desarmam repetidamente são sinais que exigem avaliação profissional.'],
+  ['Como funciona o orçamento de emergência noturno?', 'O cliente informa o problema pelo WhatsApp. Após uma avaliação inicial, são alinhados o custo da visita e o orçamento do serviço antes do início do reparo.'],
+  ['Qual a área de cobertura do eletricista?', 'O atendimento cobre Guarujá, incluindo Enseada, Pitangueiras, Astúrias e Vicente de Carvalho. Também é possível consultar disponibilidade para Santos, Bertioga e Cubatão.'],
+  ['Quais formas de pagamento são aceitas?', 'São aceitos PIX, dinheiro e cartões. A emissão de nota fiscal é realizada para os serviços.'],
+  ['Os serviços elétricos possuem garantia?', 'Os serviços possuem garantia. O prazo e as condições aplicáveis são informados no orçamento, conforme o serviço e os componentes envolvidos.']
+];
+const reviews = [
+  {initials:'RA',name:'Regina Andrade',type:'Cliente de emergência',text:'“Fiquei sem energia à noite... Milton chegou em 5 minutos. Resolveu com eficiência e preço justo.”'},
+  {initials:'VM',name:'Valdenicio Marques',type:'Cliente residencial',text:'“Cumpriu o agendamento com qualidade e educação. Com certeza irei chamar para outros serviços.”'},
+  {initials:'AD',name:'Allan Darkness',type:'Cliente comercial',text:'“Excelente profissional, sem gambiarra. Atendimento 24 horas de verdade.”'},
+  {initials:'JT',name:'Julio Tavares',type:'Cliente de emergência',text:'“Serviço excelente! Prático e eficiente em um momento de emergência.”'}
+];
+---
+<SiteLayout title={title} description={description} canonical={canonical}>
+  <Fragment slot="head">
+    <meta property="og:image" content="https://www.eletricista24horasguaruja.com.br/images/foto-profissional.jpg" />
+    <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqs.map(([q,a])=>({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}}))})} />
+  </Fragment>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Atendimento em Guarujá · 24 horas</div>
+      <h1>Eletricista 24 horas em <span>Guarujá</span></h1>
+      <p class="hero-copy">Emergências, instalações e reparos elétricos residenciais e comerciais. Atendimento também durante a noite, finais de semana e feriados.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="https://wa.me/5513996197248?text=Ol%C3%A1!%20Preciso%20de%20um%20eletricista%20em%20Guaruj%C3%A1." target="_blank" rel="noopener noreferrer">↗ Solicitar atendimento</a>
+        <a class="button button-outline" href="#servicos">Conhecer os serviços</a>
+      </div>
+      <div class="hero-points"><span><b>24h</b> Atendimento emergencial</span><span><b>✓</b> Orçamento antes do serviço</span><span><b>⌖</b> Guarujá e região</span></div>
+    </div>
+  </section>
+  <div class="page-wrap">
+    <section class="section" id="servicos">
+      <div class="section-heading"><span class="section-kicker">Serviços</span><h2>Serviços elétricos em Guarujá</h2><p>Atendimento para emergências, instalações e manutenção de sistemas elétricos em imóveis residenciais e comerciais.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><span class="service-icon">ϟ</span><h3>Eletricista 24 horas</h3><p>Diagnóstico e reparos em situações de emergência, inclusive à noite, finais de semana e feriados.</p><a class="text-link" href="#contato">Solicitar atendimento →</a></article>
+        <article class="service-card"><span class="service-icon">⌁</span><h3>Instalações e reparos</h3><p>Troca de disjuntores e fiação, instalações elétricas, tomadas e pontos de iluminação.</p><a class="text-link" href="#trabalhos">Ver trabalhos →</a></article>
+        <article class="service-card"><span class="service-icon">▤</span><h3>Quadros elétricos</h3><p>Organização de quadros, substituição de componentes e instalação de dispositivos DR e DPS.</p><a class="text-link" href="#contato">Consultar serviço →</a></article>
+        <article class="service-card"><span class="service-icon">☼</span><h3>Iluminação</h3><p>Instalação de pendentes, iluminação interna e externa e projetos com perfil de LED.</p><a class="text-link" href="#trabalhos">Ver imagens →</a></article>
+        <article class="service-card"><span class="service-icon">♨</span><h3>Aquecedor boiler</h3><p>Avaliação, manutenção e troca de resistência de aquecedor boiler em Guarujá.</p><a class="text-link" href="/aquecedor-boiler-guaruja/">Detalhes do serviço →</a></article>
+        <article class="service-card"><span class="service-icon">⌂</span><h3>Serviços hidráulicos</h3><p>Reparos hidráulicos, torneiras, sifões, bombas e manutenção de piscinas.</p><a class="text-link" href="/encanador-guaruja/">Ver página de encanador →</a></article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="split">
+        <div><span class="section-kicker">Atendimento emergencial</span><h2>Eletricista noturno em Guarujá</h2><p>Problemas elétricos podem acontecer fora do horário comercial. O atendimento funciona 24 horas para ocorrências como curto-circuito, disjuntor desarmando, falhas na instalação e cheiro de queimado.</p><ul class="check-list"><li>Atendimento também durante a madrugada</li><li>Emergências residenciais e comerciais</li><li>Orientação inicial pelo WhatsApp</li><li>Orçamento alinhado antes da execução</li></ul><a class="button button-primary" href="https://wa.me/5513996197248" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a></div>
+        <img src="/images/quadro-de-djuntores-organizados.webp" alt="Quadro de disjuntores organizado em serviço elétrico." loading="lazy" decoding="async" />
+      </div>
+    </section>
+    <section class="section" id="trabalhos">
+      <div class="section-heading"><span class="section-kicker">Registros de serviços</span><h2>Trabalhos e instalações</h2><p>Imagens de instalações, projetos de iluminação e componentes elétricos.</p></div>
+      <div class="gallery-grid">
+        <figure class="gallery-item"><img src="/images/instalacao-de-pendente.webp" alt="Instalação de pendente." loading="lazy" decoding="async" /><figcaption>Instalação de pendente</figcaption></figure>
+        <figure class="gallery-item"><img src="/images/projeto-de-iluminacao-com-perfil-de-led.webp" alt="Projeto de iluminação com perfil de LED." loading="lazy" decoding="async" /><figcaption>Perfil de LED</figcaption></figure>
+        <figure class="gallery-item"><img src="/images/projeto-de-iluminacao-com-perfil-de-led-2.webp" alt="Detalhe de iluminação com perfil de LED." loading="lazy" decoding="async" /><figcaption>Detalhe de iluminação</figcaption></figure>
+        <figure class="gallery-item"><img src="/images/projeto-de-iluminacao-em-andamento.webp" alt="Projeto de iluminação em andamento." loading="lazy" decoding="async" /><figcaption>Projeto em andamento</figcaption></figure>
+        <figure class="gallery-item"><img src="/images/quadro-de-djuntores-organizados.webp" alt="Quadro de disjuntores organizado." loading="lazy" decoding="async" /><figcaption>Quadro de disjuntores</figcaption></figure>
+        <figure class="gallery-item"><img src="/images/troca-de-resistencia-de-aquecedor-boiler.webp" alt="Troca de resistência de aquecedor boiler." loading="lazy" decoding="async" /><figcaption>Troca de resistência de boiler</figcaption></figure>
+      </div>
+    </section>
+    <section class="section">
+      <div class="profile-strip"><img src="/images/milton-em-evento-da-feira-internacional-da-industria-eletrica-e-eletronica.png" alt="Milton em evento da Feira Internacional da Indústria Elétrica e Eletrônica." loading="lazy" decoding="async" /><div><span class="section-kicker">Profissional</span><h3>Experiência e atualização no setor elétrico</h3><p>Registro da participação de Milton na Feira Internacional da Indústria Elétrica e Eletrônica, evento do segmento de equipamentos e soluções elétricas.</p></div></div>
+    </section>
+    <section class="section">
+      <div class="section-heading"><span class="section-kicker">Dúvidas frequentes</span><h2>Informações sobre o atendimento</h2></div>
+      <div class="faq-grid">{faqs.map(([question,answer])=><details class="faq-item"><summary>{question}</summary><div class="faq-answer">{answer}</div></details>)}</div>
+    </section>
+    <section class="section" id="depoimentos">
+      <div class="section-heading"><span class="section-kicker">Avaliações</span><h2>O que clientes dizem</h2><p>Depoimentos apresentados no site.</p></div>
+      <div class="review-grid">{reviews.map((review)=><article class="review-card"><div class="review-top"><span class="review-avatar">{review.initials}</span><div><strong>{review.name}</strong><small>{review.type}</small></div></div><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><p>{review.text}</p></article>)}</div>
+      <a class="review-link" href="https://maps.app.goo.gl/QsF4ifXz7X3uUhKS6" target="_blank" rel="noopener noreferrer">Consultar avaliações no Google ↗</a>
+    </section>
+    <section class="section">
+      <div class="split">
+        <div><span class="section-kicker">Conteúdo e orientação</span><h2>Informação sobre segurança elétrica</h2><p>Leia orientações sobre curto-circuito, maresia, sobrecarga e sinais de risco em instalações elétricas no litoral.</p><a class="text-link" href="/blog/">Acessar o blog →</a></div>
+        <img src="/images/projeto-de-iluminacao-em-andamento.webp" alt="Instalação elétrica e projeto de iluminação em andamento." loading="lazy" decoding="async" />
+      </div>
+    </section>
+    <section class="section" id="contato">
+      <div class="cta-band"><div><h2>Precisa de um eletricista em Guarujá?</h2><p>Entre em contato e informe o que está acontecendo.</p></div><a class="button button-primary" href="https://wa.me/5513996197248?text=Ol%C3%A1!%20Preciso%20de%20atendimento%20el%C3%A9trico%20em%20Guaruj%C3%A1." target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp ↗</a></div>
+    </section>
+  </div>
+</SiteLayout>
