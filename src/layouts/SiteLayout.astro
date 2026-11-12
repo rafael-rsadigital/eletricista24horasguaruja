@@ -8,8 +8,109 @@ interface Props {
   title: string;
   description: string;
   canonical: string;
+  ogImage?: string;
+  preloadImage?: string;
 }
-const { title, description, canonical } = Astro.props;
+const { title, description, canonical, ogImage = 'https://www.eletricista24horasguaruja.com.br/images/foto-profissional.jpg', preloadImage } = Astro.props;
+
+const siteUrl = 'https://www.eletricista24horasguaruja.com.br';
+const businessId = `${siteUrl}/#business`;
+const websiteId = `${siteUrl}/#website`;
+const pageUrl = new URL(Astro.url.pathname, siteUrl).href;
+const pageNameByPath: Record<string, string> = {
+  '/': 'Início',
+  '/aquecedor-boiler-guaruja/': 'Aquecedor boiler',
+  '/automacao-residencial-guaruja/': 'Automação residencial',
+  '/encanador-guaruja/': 'Encanador',
+  '/marido-de-aluguel-guaruja/': 'Marido de aluguel',
+  '/blog/': 'Blog e orientações',
+};
+const serviceByPath: Record<string, { name: string; type: string }> = {
+  '/': { name: 'Serviços de eletricista 24 horas em Guarujá', type: 'Serviços de instalação, manutenção e reparo elétrico' },
+  '/aquecedor-boiler-guaruja/': { name: 'Troca de resistência e manutenção de aquecedor boiler em Guarujá', type: 'Manutenção de aquecedor boiler' },
+  '/automacao-residencial-guaruja/': { name: 'Automação residencial em Guarujá', type: 'Instalação e configuração de dispositivos de automação residencial' },
+  '/encanador-guaruja/': { name: 'Serviços de encanador em Guarujá', type: 'Reparos e manutenção hidráulica' },
+  '/marido-de-aluguel-guaruja/': { name: 'Serviços de marido de aluguel em Guarujá', type: 'Pequenos reparos residenciais' },
+};
+const pageLabel = pageNameByPath[Astro.url.pathname] ?? title;
+const breadcrumbItems = Astro.url.pathname === '/' ? [] : [
+  { name: 'Início', item: `${siteUrl}/` },
+  { name: pageLabel, item: pageUrl },
+];
+const graph: Record<string, unknown>[] = [
+  {
+    '@type': 'Electrician',
+    '@id': businessId,
+    name: 'Eletricista 24 Horas Guarujá',
+    url: `${siteUrl}/`,
+    telephone: '+5513996197248',
+    description: 'Serviços elétricos residenciais, comerciais e industriais, com atendimento emergencial 24 horas em Guarujá e consulta de disponibilidade por endereço.',
+    areaServed: { '@type': 'City', name: 'Guarujá', containedInPlace: { '@type': 'State', name: 'São Paulo' } },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+5513996197248',
+      contactType: 'customer service',
+      availableLanguage: 'Portuguese',
+    },
+  },
+  {
+    '@type': 'WebSite',
+    '@id': websiteId,
+    url: `${siteUrl}/`,
+    name: 'Eletricista 24 Horas Guarujá',
+    inLanguage: 'pt-BR',
+    publisher: { '@id': businessId },
+  },
+  {
+    '@type': 'WebPage',
+    '@id': `${pageUrl}#webpage`,
+    url: canonical,
+    name: title,
+    description,
+    inLanguage: 'pt-BR',
+    isPartOf: { '@id': websiteId },
+    about: { '@id': businessId },
+    ...(breadcrumbItems.length ? { breadcrumb: { '@id': `${pageUrl}#breadcrumb` } } : {}),
+  },
+];
+const service = serviceByPath[Astro.url.pathname];
+if (service) {
+  graph.push({
+    '@type': 'Service',
+    '@id': `${pageUrl}#service`,
+    name: service.name,
+    serviceType: service.type,
+    description,
+    url: canonical,
+    provider: { '@id': businessId },
+    areaServed: { '@type': 'City', name: 'Guarujá', containedInPlace: { '@type': 'State', name: 'São Paulo' } },
+  });
+}
+if (Astro.url.pathname === '/blog/') {
+  graph.push({
+    '@type': 'BlogPosting',
+    '@id': `${pageUrl}#article`,
+    headline: title,
+    description,
+    mainEntityOfPage: canonical,
+    url: canonical,
+    inLanguage: 'pt-BR',
+    author: { '@id': businessId },
+    publisher: { '@id': businessId },
+  });
+}
+if (breadcrumbItems.length) {
+  graph.push({
+    '@type': 'BreadcrumbList',
+    '@id': `${pageUrl}#breadcrumb`,
+    itemListElement: breadcrumbItems.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.item,
+    })),
+  });
+}
 ---
 <!doctype html>
 <html lang="pt-BR">
@@ -17,18 +118,28 @@ const { title, description, canonical } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#101d32" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />}
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="Eletricista 24 Horas Guarujá" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content="Eletricista 24 Horas Guarujá — serviços elétricos e atendimento profissional" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })} />
     <slot name="head" />
   </head>
   <body>
