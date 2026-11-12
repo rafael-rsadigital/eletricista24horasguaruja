@@ -453,6 +453,20 @@
       }
   }
 /* Visual refresh */:root{--navy:#101d32;--navy2:#172b49;--blue:#245b91;--accent:#f2a900;--ink:#172033;--page:#f3f6fa;--line:#e2e8f0;--green:#16834a}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--page);line-height:1.7}header{min-height:660px;padding:0 6vw 64px;align-items:stretch;justify-content:flex-end;background-image:linear-gradient(90deg,rgba(8,19,35,.92),rgba(8,19,35,.76) 48%,rgba(8,19,35,.35)),url('foto-profissional.jpg');background-position:center 38%;background-size:cover}.top-bar{display:none}.main-nav{position:absolute;top:0;left:0;width:100%;min-height:76px;padding:18px 6vw;display:flex;justify-content:flex-end;align-items:center;gap:clamp(14px,2.2vw,32px);background:rgba(8,19,35,.28);border-bottom:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px)}.main-nav a{font-size:.92rem;font-weight:650}.main-nav a:hover{color:var(--accent)}.hero-content{max-width:1160px;width:100%;padding:110px 0 0;margin:0 auto;align-self:center}.hero-text-container{max-width:690px;margin:0 0 28px}header h1{font-size:clamp(2.7rem,5.2vw,4.7rem);font-weight:800;letter-spacing:-.045em;line-height:1.04;max-width:760px}.highlight{display:inline;color:var(--accent)}.slogan{font-size:1rem;color:#f8c44d;letter-spacing:.08em;text-transform:uppercase;margin:20px 0 12px}.description-text{font-size:clamp(1.05rem,1.6vw,1.2rem);line-height:1.65;color:#e5edf7;max-width:640px}.btn{border-radius:8px;padding:13px 22px;font-size:.95rem;box-shadow:0 8px 24px rgba(0,0,0,.12)}.btn.whatsapp-hero{background:var(--green);padding:15px 25px}.btn.whatsapp-hero:hover{background:#116b3c}.btn.secondary-hero{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.38);padding:15px 25px}.hero-features{gap:12px;margin-top:34px;max-width:720px}.feature-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:16px;backdrop-filter:blur(8px)}.feature-card i{color:var(--accent)}.container{width:min(90%,1160px);padding:56px 0}section{margin:0 0 28px;padding:34px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 28px rgba(15,35,60,.045)}h2{font-size:clamp(1.55rem,2.4vw,2rem);line-height:1.2;color:var(--navy);border:0;padding:0 0 16px;margin:0 0 20px;position:relative}h2:after{content:"";position:absolute;bottom:0;left:0;width:54px;height:3px;background:var(--accent);border-radius:4px}h3{color:var(--navy);line-height:1.3}p,li{color:#475569}section p{font-size:1rem}.service-img{height:310px;object-fit:cover;border-radius:14px;margin:4px 0 22px}.services{grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}.card{border:1px solid var(--line);border-radius:15px;padding:24px;text-align:left;box-shadow:none}.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(15,35,60,.08)}.card i{color:var(--blue);font-size:30px}.card .service-img{height:175px}.review-card{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;box-shadow:none}.review-info strong{color:var(--navy)}.review-avatar{background:var(--navy2)}.faq-item{border:1px solid var(--line);border-radius:10px;box-shadow:none}.faq-question{background:#f8fafc;border:0;border-left:3px solid var(--blue);color:var(--navy);gap:16px}.faq-question:hover{background:#eef4fa;box-shadow:none}.faq-answer{line-height:1.7}footer{background:var(--navy);padding:34px 18px}.whatsapp-float{background:var(--green)!important;box-shadow:0 8px 22px rgba(22,131,74,.3)}@media(max-width:768px){header{min-height:720px;padding:0 22px 40px;background-position:58% center}.top-bar{display:flex;position:absolute;top:12px;right:18px;z-index:120;padding:10px}.menu-toggle{display:block;color:white;font-size:1.55rem}.main-nav{display:none;position:absolute;top:66px;right:16px;left:auto;width:min(88%,340px);padding:10px;gap:0;flex-direction:column;align-items:stretch;background:rgba(12,27,47,.98);border:1px solid rgba(255,255,255,.15);border-radius:12px;z-index:110}.main-nav.active{display:flex}.main-nav a{width:100%;padding:12px;text-align:left;border-bottom:1px solid rgba(255,255,255,.1)}.hero-content{padding:100px 0 0}header h1{font-size:clamp(2.45rem,11vw,3.5rem)}.description-text{font-size:1rem}.hero-features{flex-direction:row;flex-wrap:wrap;align-items:stretch;margin-top:28px;gap:9px}.feature-card{width:calc(50% - 5px);max-width:none;align-items:flex-start;text-align:left;padding:13px}.feature-card:last-child{width:100%}.container{width:92%;padding:28px 0}section{padding:23px 19px;margin-bottom:18px;border-radius:14px}.service-img{height:220px}.btn.whatsapp-hero,.btn.secondary-hero{margin:7px 6px 7px 0}}@media(max-width:420px){.feature-card,.feature-card:last-child{width:100%}}
+/* Imagens reais, galeria e apresentação profissional */
+.work-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.work-gallery figure{margin:0;overflow:hidden;border-radius:13px;background:#f8fafc;border:1px solid var(--line)}
+.work-gallery img{display:block;width:100%;height:220px;object-fit:cover;transition:transform .35s}
+.work-gallery figure:hover img{transform:scale(1.035)}
+.work-gallery figcaption{padding:12px 14px;font-weight:650;color:var(--navy);font-size:.94rem}
+.boiler-feature,.professional-profile{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px;align-items:center}
+.boiler-feature img,.professional-profile img{width:100%;height:310px;object-fit:cover;border-radius:14px}
+.professional-profile{grid-template-columns:minmax(260px,.85fr) minmax(0,1.15fr)}
+.professional-profile h2{margin-top:0}
+#profissional{background:#f8fafc}
+@media(max-width:760px){.work-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.work-gallery img{height:160px}.boiler-feature,.professional-profile{grid-template-columns:1fr;gap:16px}.boiler-feature img,.professional-profile img{height:240px}}
+@media(max-width:420px){.work-gallery{grid-template-columns:1fr}.work-gallery img{height:220px}}
+
 </style>
 </head>
 <body>
@@ -465,6 +479,8 @@
     <nav class="main-nav" id="main-nav">
       <a href="#eletricista">Eletricista</a>
       <a href="#outros-servicos">Outros Serviços</a>
+      <a href="#galeria">Trabalhos</a>
+      <a href="aquecedor-boiler-guaruja/">Aquecedor Boiler</a>
       <a href="#faq">FAQ</a>
       <a href="#depoimentos">Depoimentos</a>
       <a href="blog/">Blog</a>
@@ -509,7 +525,7 @@
   <section id="eletricista">
     <h2>Eletricista 24 Horas em Guarujá</h2>
     <!-- CORREÇÃO: Grafia da imagem voltando para profissional -->
-    <img src="foto-profissional.jpg" alt="Imagem de um eletricista trabalhando em painel de disjuntores." class="service-img" onerror="this.onerror=null;this.src='https://placehold.co/600x200/004aad/ffffff?text=Eletricista%20Profissional'">
+    <img src="images/quadro-de-djuntores-organizados.webp" alt="Quadro de disjuntores organizado após serviço elétrico." class="service-img" loading="lazy" decoding="async">
     <p>Atendimento rápido em qualquer dia e horário, inclusive feriados. Serviços residenciais, comerciais, industriais e emergenciais 24h.</p>
     <ul>
       <li>Instalações e reparos elétricos</li>
@@ -525,9 +541,15 @@
   </section>
 
   <section id="aquecedor-boiler">
-    <h2>Troca e manutenção de aquecedor boiler em Guarujá</h2>
-    <p>Atendimento para avaliação, troca de resistência e manutenção de aquecedores boiler. O serviço é indicado para quem está sem água quente ou percebeu falhas no aquecimento. O modelo do equipamento e a necessidade de peças são avaliados antes do orçamento.</p>
-    <a href="https://wa.me/5513996197248?text=Ol%C3%A1!%20Preciso%20de%20atendimento%20para%20aquecedor%20boiler%20em%20Guaruj%C3%A1." target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Consultar atendimento para boiler</a>
+    <h2>Troca de resistência e manutenção de aquecedor boiler em Guarujá</h2>
+    <div class="boiler-feature">
+      <img src="images/troca-de-resistencia-de-aquecedor-boiler.webp" alt="Serviço de troca de resistência de aquecedor boiler." loading="lazy" decoding="async">
+      <div>
+        <p>Atendimento para avaliação de falhas no aquecimento, troca de resistência e manutenção de aquecedores boiler. O equipamento é avaliado para identificar a necessidade de reparo ou substituição de componentes.</p>
+        <a href="aquecedor-boiler-guaruja/" class="btn">Conheça o serviço de boiler</a>
+        <a href="https://wa.me/5513996197248?text=Ol%C3%A1!%20Preciso%20de%20atendimento%20para%20aquecedor%20boiler%20em%20Guaruj%C3%A1." target="_blank" rel="noopener" class="btn whatsapp-hero"><i class="fab fa-whatsapp"></i> Consultar atendimento</a>
+      </div>
+    </div>
   </section>
 
   <section id="outros-servicos">
@@ -541,6 +563,29 @@
         <a href="encanador-guaruja/" class="btn">Saiba mais</a>
       </div>
       
+    </div>
+  </section>
+
+<section id="galeria">
+    <h2>Serviços elétricos realizados</h2>
+    <p>Alguns registros de instalações, projetos de iluminação e serviços em quadros elétricos.</p>
+    <div class="work-gallery">
+      <figure><img src="images/instalacao-de-pendente.webp" alt="Instalação de pendente em ambiente residencial no Guarujá." loading="lazy" decoding="async"><figcaption>Instalação de pendente</figcaption></figure>
+      <figure><img src="images/projeto-de-iluminacao-com-perfil-de-led.webp" alt="Projeto de iluminação com perfil de LED." loading="lazy" decoding="async"><figcaption>Iluminação com perfil de LED</figcaption></figure>
+      <figure><img src="images/projeto-de-iluminacao-com-perfil-de-led-2.webp" alt="Detalhe de projeto de iluminação com perfil de LED." loading="lazy" decoding="async"><figcaption>Detalhes de iluminação</figcaption></figure>
+      <figure><img src="images/projeto-de-iluminacao-em-andamento.webp" alt="Projeto de iluminação com perfil de LED em andamento." loading="lazy" decoding="async"><figcaption>Projeto em andamento</figcaption></figure>
+      <figure><img src="images/quadro-de-djuntores-organizados.webp" alt="Quadro de disjuntores organizado." loading="lazy" decoding="async"><figcaption>Organização de quadro elétrico</figcaption></figure>
+      <figure><img src="images/resistencia-aquecedor-boiler.webp" alt="Resistência utilizada em aquecedor boiler." loading="lazy" decoding="async"><figcaption>Componente de aquecedor boiler</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="profissional">
+    <div class="professional-profile">
+      <img src="images/milton-em-evento-da-feira-internacional-da-industria-eletrica-e-eletronica.png" alt="Milton em evento da Feira Internacional da Indústria Elétrica e Eletrônica." loading="lazy" decoding="async">
+      <div>
+        <h2>Experiência e atualização profissional</h2>
+        <p>Milton participa de eventos do setor elétrico para acompanhar novidades, equipamentos e soluções da área. O registro apresenta sua presença na Feira Internacional da Indústria Elétrica e Eletrônica.</p>
+      </div>
     </div>
   </section>
 
