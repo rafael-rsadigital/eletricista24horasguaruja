@@ -27,9 +27,9 @@ const reviews = [
   {name:'Pietra Souza',date:'Há 1 ano',text:'A energia da minha casa acabou tarde da noite e o Milton veio salvar a minha família com prontidão, aparecendo muito rápido para nos ajudar!! Recomendo demais o trabalho dele, muito eficiente e muito simpático!! Trabalho sensacional!!'}
 ];
 ---
-<SiteLayout title={title} description={description} canonical={canonical}>
+<SiteLayout title={title} description={description} canonical={canonical} preloadImage="/images/foto-profissional.jpg">
   <Fragment slot="head">
-    <meta property="og:image" content="https://www.eletricista24horasguaruja.com.br/images/foto-profissional.jpg" />
+    
     <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqs.map(([q,a])=>({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}}))})} />
   </Fragment>
   <section class="hero">
