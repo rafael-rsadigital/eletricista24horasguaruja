@@ -29,7 +29,6 @@ const reviews = [
 ---
 <SiteLayout title={title} description={description} canonical={canonical} preloadImage="/images/foto-profissional.jpg">
   <Fragment slot="head">
-    
     <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqs.map(([q,a])=>({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}}))})} />
   </Fragment>
   <section class="hero">
