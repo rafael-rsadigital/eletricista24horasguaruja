@@ -15,7 +15,16 @@ const reviews = [
   {name:'Alex Albuquerque',date:'5 de novembro de 2026',text:'Muito bom, ótimo profissional, Entrega no prazo e organizado'},
   {name:'Markus Leon',date:'29 de outubro de 2026',text:'Excelente Profissional!!! Identificou o problema rápido!!! Muito satisfeito!!!!'},
   {name:'Camila Oliveira',date:'25 de outubro de 2026',text:'Excelente profissional! Tive um problema com a energia da minha casa e o disjuntor, e ele me deu todo o suporte pelo WhatsApp, com muita atenção, paciência e profissionalismo. Mesmo à distância, foi muito prestativo, me orientou direitinho e me ajudou a entender o que estava acontecendo e resolveu o meu problema. É muito bom encontrar profissionais que realmente se preocupam em ajudar e que demonstram conhecimento e dedicação pelo que fazem. Super recomendo o trabalho dele!'},
-  {name:'Juliano Gadig',date:'13 de outubro de 2026',text:'O sr Milton foi excelente! Serviço de qualidade!! Me atendeu em emergência e de forma rápida. Muito bom.'}
+  {name:'Juliano Gadig',date:'13 de outubro de 2026',text:'O sr Milton foi excelente! Serviço de qualidade!! Me atendeu em emergência e de forma rápida. Muito bom.'},
+  {name:'Krishnamurti Abreu',date:'Há 1 mês',text:'Excelente! Recomendo a todos aqui no meu restaurante. Depois de passar vários outros eletricistas, o Milton é o único que recomendo.'},
+  {name:'Sandra Sena Melo',date:'Há 2 meses',text:'Boa tarde! Passando para agradecer pelo serviço impecável aqui em casa, além de deixar tudo limpo e organizado. Trabalho muito bem feito, organizado e rápido. Já salvei seu contato e com certeza vou te indicar para amigos e família!'},
+  {name:'Bruno Compri',date:'Há 1 mês · avaliação editada',text:'Atendimento e serviço impecável. Tive um curto na caixa de energia e o Milton foi à meia-noite resolver o problema, evitando a perda dos alimentos da geladeira.'},
+  {name:'Priscila Araujo',date:'Há 1 mês',text:'Excepcional o atendimento! Conseguiu resolver o problema pelo telefone!!! Muito atencioso, me ajudou muito e em pouco tempo! Recomendo com toda certeza! Parabéns!'},
+  {name:'Amanda Medina',date:'Há 1 mês',text:'Profissional excelente, super rápido. Foi super prestativo, nos salvou de passar a noite sem energia elétrica!'},
+  {name:'Fumodovale',date:'Há 10 meses',text:'Após uma chuva forte, tive um problema na rede elétrica e entrei em contato com o Milton em pleno Ano Novo. Para minha surpresa, tive um retorno muito rápido: ele atendeu minha ligação e me auxiliou prontamente via WhatsApp. Mesmo sem conhecê-lo antes, a primeira experiência já foi extremamente positiva. Muito obrigada!'},
+  {name:'Regina Andrade',date:'Há 1 ano',text:'Fiquei sem energia à noite, por volta das 21h, muito calor, pensa no sufoco que passei. Entrei em contato com o Milton, expliquei a situação e em 5 minutos ele chegou aqui em casa. Resolveu tudo com eficiência, rapidez e preço justo. Recomendo muito o trabalho dele. Muito obrigada Milton.'},
+  {name:'Victor Duarte',date:'Há 1 ano',text:'Precisei de um serviço urgente no Guarujá. Achei o contato pelo Google e foi uma excelente surpresa. Em pouco tempo estava na casa, fez o serviço super bem feito e com valor honesto. Recomendo.'},
+  {name:'Pietra Souza',date:'Há 1 ano',text:'A energia da minha casa acabou tarde da noite e o Milton veio salvar a minha família com prontidão, aparecendo muito rápido para nos ajudar!! Recomendo demais o trabalho dele, muito eficiente e muito simpático!! Trabalho sensacional!!'}
 ];
 ---
 <SiteLayout title={title} description={description} canonical={canonical}>
@@ -96,7 +105,7 @@ const reviews = [
       <div class="faq-grid">{faqs.map(([question,answer])=><details class="faq-item"><summary>{question}</summary><div class="faq-answer">{answer}</div></details>)}</div>
     </section>
     <section class="section" id="depoimentos">
-      <div class="section-heading"><span class="section-kicker">Avaliações do Google</span><h2>Quem contrata, recomenda</h2><p>Experiências compartilhadas por clientes que já contaram com o atendimento da Eletricista 24 Horas Guarujá.</p></div>
+      <div class="section-heading"><span class="section-kicker">Avaliações do Google</span><h2>Experiências reais de quem já foi atendido</h2><p>Relatos de clientes sobre atendimentos emergenciais, serviços elétricos, rapidez, organização e suporte prestado pelo Milton em Guarujá.</p></div>
       <div class="reviews-summary" aria-label="Nota média 4,9 de 5 com 150 avaliações no Google">
         <strong>4,9<span>/5</span></strong><div><div class="stars" aria-hidden="true">★★★★★</div><small>150 avaliações no Google</small></div>
       </div>
