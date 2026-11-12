@@ -16,16 +16,6 @@ const faqs = [
 ---
 <SiteLayout title={title} description={description} canonical={canonical}>
   <Fragment slot="head">
-    
-    <script type="application/ld+json" set:html={JSON.stringify({
-      '@context':'https://schema.org',
-      '@type':'Service',
-      name:'Automação residencial em Guarujá',
-      serviceType:'Instalação e configuração de dispositivos de automação residencial',
-      description,
-      provider:{'@type':'Electrician',name:'Eletricista 24 Horas Guarujá',url:'https://www.eletricista24horasguaruja.com.br/'},
-      areaServed:{'@type':'City',name:'Guarujá',containedInPlace:{'@type':'State',name:'São Paulo'}}
-    })} />
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context':'https://schema.org',
       '@type':'FAQPage',
