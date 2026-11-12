@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/instalacao-ar-condicionado-guaruja",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/instalacao-ar-condicionado-guaruja/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/instalacao-ar-condicionado-guaruja/:path*",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
