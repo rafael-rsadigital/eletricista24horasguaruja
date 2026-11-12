@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "check": "astro check"
+    "preview": "astro preview"
   },
   "dependencies": {
     "astro": "7.4.10"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }
